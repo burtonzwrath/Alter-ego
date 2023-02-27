@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router";
 
-function ProfilePage(props) {
-    return (
-        <div></div>
-    );
+const ProfilePage = () =>{
+    const navigate = useNavigate()
+    const isLogged = localStorage.getItem("auth")
+
+useEffect(()=>{
+ if(!isLogged) navigate("/")
+},[ isLogged])
+
+  return <div>profile</div>;
 }
 
 export default ProfilePage;

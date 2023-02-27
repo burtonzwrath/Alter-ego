@@ -1,0 +1,34 @@
+.container {
+  background-color: burlywood;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  position:sticky;
+  z-index:10
+}
+
+.ul {
+  list-style-type: none;
+  width: 30%;
+  display: flex;
+  gap: 30px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+.auth {
+  display: flex;
+  flex-direction: column;
+}
