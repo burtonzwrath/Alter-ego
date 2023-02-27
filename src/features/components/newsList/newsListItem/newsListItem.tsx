@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import DeleteSweepOutlinedIcon from "@mui/icons-material/DeleteSweepOutlined";
 import { Box, Grid, ListItemText, Paper, Slide } from "@mui/material";
-import {newListItemTypes} from "./newListTypes";
-export const NewsListItem:React.FC<newListItemTypes> = ({ item, handleDelete }) => {
-const [set, setSet] = useState(true);
+import { newListItemTypes } from "./newListTypes";
+export const NewsListItem: React.FC<newListItemTypes> = ({
+  item,
+  handleDelete,
+}) => {
+  const [set, setSet] = useState(true);
 
   return (
     <Slide in={set} timeout={1000} direction="left">
@@ -17,14 +20,7 @@ const [set, setSet] = useState(true);
         }}
       >
         <Box sx={{ padding: "2px 20px" }}>
-          <Grid
-            // container
-            // spacing={1}
-            // justify="space-around"
-            // alignItems="center"
-            // p={1}
-            // m={1}
-          >
+          <Grid>
             <ListItemText>{item.title}</ListItemText>
             <DeleteSweepOutlinedIcon
               sx={{
@@ -36,7 +32,7 @@ const [set, setSet] = useState(true);
                 color: "lightgoldenrodyellow",
               }}
               onClick={(e) => {
-                  handleDelete(item.id);
+                handleDelete(item.id);
                 setSet((prev) => !prev);
               }}
             >

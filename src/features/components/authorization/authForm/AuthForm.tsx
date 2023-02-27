@@ -3,7 +3,7 @@ import { Grid, Paper, TextField, Button, InputAdornment } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import LogoutIcon from "@mui/icons-material/Logout";
-const AuthForm:React.FC<any> = ({
+const AuthForm: React.FC<any> = ({
   setPassword,
   setUserName,
   userName,
@@ -11,7 +11,7 @@ const AuthForm:React.FC<any> = ({
   setHideForm,
 }) => {
   const [visible, setVisible] = useState(false);
-  const paperStyle:any = {
+  const paperStyle: any = {
     padding: 10,
     height: "230px",
     width: "200px",
@@ -21,15 +21,18 @@ const AuthForm:React.FC<any> = ({
     gap: "10px",
     borderColor: "purple",
     boxShadow: "3px 3px 3px 3px black",
-    color:"black",
-    backgroundColor: "lightgoldenrodyellow"
+    color: "black",
+    backgroundColor: "lightgoldenrodyellow",
   };
-  const btnstyle = { margin: "8px 0", backgroundColor:"black", color:"mediumslateblue" };
+  const btnstyle = {
+    margin: "8px 0",
+    backgroundColor: "black",
+    color: "mediumslateblue",
+  };
 
   const handleCloseForm = (): void => {
     setHideForm((prevState: boolean) => !prevState);
   };
-
 
   return (
     <Grid>

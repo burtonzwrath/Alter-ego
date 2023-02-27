@@ -1,18 +1,18 @@
-import React, {useEffect} from "react";
-import {useDispatch, useSelector} from "react-redux";
-import { setFlag} from "../redux/news/newsSlice";
-import {getNews} from "../redux/news/selectors";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setFlag } from "../redux/news/newsSlice";
+import { getNews } from "../redux/news/selectors";
 
-const HomePage = () =>{
+const HomePage = () => {
   const news = useSelector(getNews);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-  useEffect(()=>{
-    if(news.length!==0){
-      dispatch(setFlag(true))
+  useEffect(() => {
+    if (news.length !== 0) {
+      dispatch(setFlag(true));
     }
-  },[dispatch])
+  }, [dispatch]);
 
   return <div>HomePage</div>;
-}
+};
 export default HomePage;

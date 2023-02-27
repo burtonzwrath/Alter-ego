@@ -3,14 +3,9 @@ import { useNavigate } from "react-router";
 import AuthForm from "./authForm/AuthForm";
 import { useDispatch } from "react-redux";
 import { setLogin } from "../../../redux/news/newsSlice";
-import {
-  Box,
-  Modal,
-  Typography,
-  Slide,
-} from "@mui/material";
+import { Box, Modal, Typography, Slide } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const Authorization = () => {
   const [userName, setUserName] = useState("");
@@ -25,12 +20,11 @@ const Authorization = () => {
 
   useEffect(() => {
     if (localStorage.length !== 0) {
-      const key = localStorage.getItem("currentUser")
+      const key = localStorage.getItem("currentUser");
       if (key != null) {
         const access = JSON.parse(key);
         dispatch(setLogin(access.isLogged));
       }
-
     }
   }, []);
 
@@ -67,13 +61,24 @@ const Authorization = () => {
   return (
     <Box
       role="button"
-      sx={{ display: "flex", position: "relative", cursor: "pointer", alignItems:"center" }}
+      sx={{
+        display: "flex",
+        position: "relative",
+        cursor: "pointer",
+        alignItems: "center",
+      }}
     >
       <Box
-        sx={{ width: 120, height: 22, display: "flex", color:"mediumslateblue",justifyContent:"center" }}
+        sx={{
+          width: 120,
+          height: 22,
+          display: "flex",
+          color: "mediumslateblue",
+          justifyContent: "center",
+        }}
         onClick={() => setHideForm((prev) => !prev)}
       >
-        <LoginIcon />     {t('login')}
+        <LoginIcon /> {t("login")}
       </Box>
       <Slide in={hideForm} timeout={1000} direction="down">
         <Box
@@ -84,7 +89,7 @@ const Authorization = () => {
             flexDirection: "column",
             position: "absolute",
             top: "60px",
-            right:"1px"
+            right: "1px",
           }}
           onSubmit={handleLogin}
         >
@@ -117,6 +122,6 @@ const Authorization = () => {
       </Modal>
     </Box>
   );
-}
+};
 
 export default Authorization;

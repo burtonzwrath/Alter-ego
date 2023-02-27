@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { NewsList } from "../features/components/newsList/newsList";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNews } from "../redux/news/operations";
-import {  setFlag, deleteNews } from "../redux/news/newsSlice";
+import {   deleteNews } from "../redux/news/newsSlice";
 import { Box  } from "@mui/material";
 import {
   getCurrentPage,
@@ -15,6 +15,7 @@ import ButtonDownload from "../features/components/buttonDownload/ButtonDownload
 import {AppDispatch} from "../redux/store";
 
 function NewsPage() {
+    console.log("render")
   const dispatch = useDispatch<AppDispatch>();
   const news = useSelector(getNews);
   const currentPage = useSelector(getCurrentPage);
@@ -25,11 +26,8 @@ function NewsPage() {
   useEffect(() => {
     if (!flag) {
       dispatch(fetchNews(currentPage));
-    } else {
-      dispatch(setFlag(false));
     }
   }, [dispatch, currentPage, flag]);
-
 
   const handleDelete = (id:number) => {
     setTimeout(() => {
@@ -51,7 +49,7 @@ function NewsPage() {
       }}
     >
       <NewsList news={news} handleDelete={handleDelete} />
-        {news && <ButtonDownload/>}
+      <ButtonDownload/>
     </Box>
   );
 }
