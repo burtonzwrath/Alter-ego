@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { Box, Button, Slide } from "@mui/material";
 import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,10 +9,10 @@ const ButtonDownload: React.FC = () => {
   const lastRef = useRef<HTMLDivElement | null>(null);
   const news = useSelector(getNews);
 
-  const showMore = () => {
+  const showMore = useCallback(() => {
     dispatch(increment());
     dispatch(setFlag(false));
-  };
+  },[increment,setFlag,dispatch])
 
   useEffect(() => {
     lastRef?.current?.scrollIntoView({
@@ -42,4 +42,4 @@ const ButtonDownload: React.FC = () => {
   );
 };
 
-export default ButtonDownload;
+export default React.memo(ButtonDownload) ;

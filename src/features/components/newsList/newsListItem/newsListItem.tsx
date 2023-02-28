@@ -13,14 +13,14 @@ export const NewsListItem: React.FC<newListItemTypes> = ({
       <Paper
         elevation={3}
         sx={{
-          width: "70%",
+          width: "100%",
           marginBottom: "10px",
           backgroundColor: "lightgoldenrodyellow",
           boxShadow: "3px 3px 3px 3px black",
         }}
       >
         <Box sx={{ padding: "2px 20px" }}>
-          <Grid>
+          <Box sx={{display:"flex", justifyContent:"space-between",gap:"10px", alignItems:"center"}}>
             <ListItemText>{item.title}</ListItemText>
             <DeleteSweepOutlinedIcon
               sx={{
@@ -38,7 +38,7 @@ export const NewsListItem: React.FC<newListItemTypes> = ({
             >
               delete
             </DeleteSweepOutlinedIcon>
-          </Grid>
+          </Box>
         </Box>
       </Paper>
     </Slide>

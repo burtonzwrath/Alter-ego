@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef } from "react";
 import { NewsList } from "../features/components/newsList/newsList";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNews } from "../redux/news/operations";
@@ -14,7 +14,7 @@ import {
 import ButtonDownload from "../features/components/buttonDownload/ButtonDownload";
 import {AppDispatch} from "../redux/store";
 
-function NewsPage() {
+const  NewsPage = () =>{
     console.log("render")
   const dispatch = useDispatch<AppDispatch>();
   const news = useSelector(getNews);
@@ -29,13 +29,13 @@ function NewsPage() {
     }
   }, [dispatch, currentPage, flag]);
 
-  const handleDelete = (id:number) => {
+  const handleDelete = useCallback((id:number)=>{ 
     setTimeout(() => {
-      dispatch(deleteNews(id));
-    }, 800);
-  };
+    dispatch(deleteNews(id))
+  }, 800)},[])
+   
 
-  return (
+  return news && (
     <Box
       className="newsWrapper"
       sx={{
@@ -49,9 +49,9 @@ function NewsPage() {
       }}
     >
       <NewsList news={news} handleDelete={handleDelete} />
-      <ButtonDownload/>
+    
     </Box>
   );
 }
 
-export default NewsPage;
+export default React.memo(NewsPage) ;

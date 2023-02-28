@@ -1,6 +1,6 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
+import Box from "@mui/material/Stack";
 import i18n from "i18next";
 import {makeStyles} from "@mui/styles";
 import { useState} from "react";
@@ -43,7 +43,7 @@ const LanguageSwitcher = () => {
     }
 
   return (
-    <Stack direction="row" spacing={2}>
+    <Box  sx={{display:"flex",gap:"10px",flexDirection:{xs:"column", md:"row"}}}>
         <Button
             data-leng={lengUkr}
             className={s.buttonUkr}
@@ -63,7 +63,7 @@ const LanguageSwitcher = () => {
         > Eng
         </Button>
 
-    </Stack>
+    </Box>
   );
 };
 export default LanguageSwitcher;
