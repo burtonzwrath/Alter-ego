@@ -45,7 +45,7 @@ const  NewsPage = () =>{
         justifyContent: "space-between",
         width: "100%",
         backgroundColor:"burlywood",
-        alignItems:"center"
+        alignItems:"center",
       }}
     >
       <NewsList news={news} handleDelete={handleDelete} />

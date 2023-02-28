@@ -8,7 +8,7 @@ import ButtonDownload from "../buttonDownload/ButtonDownload";
 const styles = makeStyles({
   list: {
     listStyle: "none",
-    padding: "20",
+    padding: "0 20px",
   },
   item: {
     width: "100%",
