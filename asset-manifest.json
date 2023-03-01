@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/burtonzwrath/Alter-ego/static/css/main.073c9b0a.css",
+    "main.js": "/burtonzwrath/Alter-ego/static/js/main.9e41674e.js",
+    "static/media/profile.png": "/burtonzwrath/Alter-ego/static/media/profile.41abf61e7ac00f36afb0.png",
+    "static/media/Ukraine.jpg": "/burtonzwrath/Alter-ego/static/media/Ukraine.2f45688553d387acfaa1.jpg",
+    "index.html": "/burtonzwrath/Alter-ego/index.html",
+    "main.073c9b0a.css.map": "/burtonzwrath/Alter-ego/static/css/main.073c9b0a.css.map",
+    "main.9e41674e.js.map": "/burtonzwrath/Alter-ego/static/js/main.9e41674e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9e41674e.js"
+  ]
+}
