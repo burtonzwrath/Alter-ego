@@ -4,7 +4,7 @@ import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getNews } from "../../../redux/news/selectors/selectors";
 import { useTranslation } from "react-i18next";
-import {buttonDownloadStyles} from "./buttonDownloadStyles";
+import { buttonDownloadStyles } from "./buttonDownloadStyles";
 
 const ButtonDownload: React.FC = () => {
   const s = buttonDownloadStyles();
@@ -14,11 +14,13 @@ const ButtonDownload: React.FC = () => {
   const { t } = useTranslation();
 
   useEffect(() => {
-    lastRef?.current?.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "nearest",
-    });
+    setTimeout(() => {
+      lastRef?.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest",
+      });
+    }, 1000);
   }, [news]);
 
   const showMore = useCallback(() => {
