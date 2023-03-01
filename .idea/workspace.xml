@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <workItem from="1677649412710" duration="15943000" />
       <workItem from="1677666212646" duration="2859000" />
       <workItem from="1677669096778" duration="942000" />
-      <workItem from="1677670051099" duration="9777000" />
+      <workItem from="1677670051099" duration="10164000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -120,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677679860310</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="profile">
+      <created>1677679995771</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677679995771</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
