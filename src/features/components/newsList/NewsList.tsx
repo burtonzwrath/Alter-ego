@@ -1,17 +1,14 @@
-import { NewsListItem } from "./newsListItem/newsListItem";
+import { NewsListItem } from "./newsListItem/NewsListItem";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/material";
 import React from "react";
 import { newListTypes } from "./newsListTypes";
-import ButtonDownload from "../buttonDownload/ButtonDownload";
+import ButtonDownload from "../downloadButton/ButtonDownload";
 
 const styles = makeStyles({
   list: {
     listStyle: "none",
     padding: "0 20px",
-  },
-  item: {
-    width: "100%",
   },
 });
 
@@ -22,7 +19,7 @@ export const NewsList: React.FC<newListTypes> = ({ news, handleDelete }) => {
       {news.map((item) => (
         <NewsListItem handleDelete={handleDelete} key={item.id} item={item} />
       ))}
-       <ButtonDownload/>
+      <ButtonDownload />
     </Box>
   );
 };

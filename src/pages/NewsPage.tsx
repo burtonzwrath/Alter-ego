@@ -1,8 +1,9 @@
-import React, { useCallback, useEffect, useRef } from "react";
-import { NewsList } from "../features/components/newsList/newsList";
+import React, { useCallback, useEffect } from "react";
+import { NewsList } from "../features/components/newsList/NewsList";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNews } from "../redux/news/operations";
 import {   deleteNews } from "../redux/news/newsSlice";
+import {AppDispatch} from "../redux/store";
 import { Box  } from "@mui/material";
 import {
   getCurrentPage,
@@ -11,8 +12,6 @@ import {
   getStatus,
   getError,
 } from "../redux/news/selectors";
-import ButtonDownload from "../features/components/buttonDownload/ButtonDownload";
-import {AppDispatch} from "../redux/store";
 
 const  NewsPage = () =>{
     console.log("render")
@@ -49,7 +48,6 @@ const  NewsPage = () =>{
       }}
     >
       <NewsList news={news} handleDelete={handleDelete} />
-    
     </Box>
   );
 }

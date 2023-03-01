@@ -3,6 +3,11 @@ import { Box, Button, Slide } from "@mui/material";
 import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getNews } from "../../../redux/news/selectors";
+import {styled} from "@mui/material/styles";
+
+const DownloadButton = styled(Button)({
+    color: "lightgoldenrodyellow"
+}) as typeof Button;
 
 const ButtonDownload: React.FC = () => {
   const dispatch = useDispatch();
@@ -33,9 +38,9 @@ const ButtonDownload: React.FC = () => {
           width: "200px",
         }}
       >
-        <Button sx={{ color: "lightgoldenrodyellow" }} onClick={showMore}>
+        <DownloadButton  onClick={showMore}>
           download next news
-        </Button>
+        </DownloadButton>
         <div ref={lastRef}></div>
       </Box>
     </Slide>

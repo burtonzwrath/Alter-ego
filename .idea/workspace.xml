@@ -2,12 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/buttonDownload/ButtonDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/buttonDownload/ButtonDownload.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newsListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newsListItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/authorization/AuthorizationTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/locatStorage.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/NavBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/buttonDownload/ButtonDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newsListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/sharedLyout/Buttons/ButtonHome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/sharedLyout/Buttons/ButtonHome.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/sharedLyout/Buttons/ButtonNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/sharedLyout/Buttons/ButtonNews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/sharedLyout/Buttons/ButtonProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/sharedLyout/Buttons/ButtonProfile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/sharedLyout/SharedLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/sharedLyout/SharedLayout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/news/selectorTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/selectorTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +35,15 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2MJi663ZVOCGNOVPd9vJh2FxzZe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -42,6 +55,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\downloadButton" />
+      <recent name="D:\DoctorWebSite\Alter-ego\src\features\ui\sharedLyout\Buttons" />
       <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\newsList" />
       <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\newsList\newsListItem" />
       <recent name="D:\DoctorWebSite\Alter-ego\src" />
@@ -57,7 +72,8 @@
       <updated>1677491908165</updated>
       <workItem from="1677491909352" duration="2623000" />
       <workItem from="1677495371032" duration="12658000" />
-      <workItem from="1677510333503" duration="10456000" />
+      <workItem from="1677510333503" duration="10896000" />
+      <workItem from="1677649412710" duration="5156000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -66,14 +82,23 @@
       <option name="project" value="LOCAL" />
       <updated>1677522836322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="styling">
+      <created>1677526329066</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677526329066</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="typescript add" />
-    <option name="LAST_COMMIT_MESSAGE" value="typescript add" />
+    <MESSAGE value="styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling" />
   </component>
 </project>

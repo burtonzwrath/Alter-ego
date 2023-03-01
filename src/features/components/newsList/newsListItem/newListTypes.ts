@@ -1,5 +1,6 @@
 export type newListItemTypes = {
-  item: { title: string; id: number };
+  item: {
+    title: string; id: number
+  };
   handleDelete: (name: number) => void;
 };
-

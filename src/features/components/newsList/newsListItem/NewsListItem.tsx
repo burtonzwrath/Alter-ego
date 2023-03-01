@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DeleteSweepOutlinedIcon from "@mui/icons-material/DeleteSweepOutlined";
-import { Box, Grid, ListItemText, Paper, Slide } from "@mui/material";
+import { Box, ListItemText, Paper, Slide } from "@mui/material";
 import { newListItemTypes } from "./newListTypes";
 export const NewsListItem: React.FC<newListItemTypes> = ({
   item,

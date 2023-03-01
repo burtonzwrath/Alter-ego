@@ -2,46 +2,55 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import HomeIcon from "@mui/icons-material/Home";
 import { AppBar } from "@mui/material";
 import { useNavigate } from "react-router";
-import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import Authorization from "../authorization/Authorization";
 import { useSelector } from "react-redux";
-import {getIsLogged} from "../../../redux/news/selectors";
+import { getIsLogged } from "../../../redux/news/selectors";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher";
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import ButtonHome from "../../ui/sharedLyout/Buttons/ButtonHome";
 import ButtonNews from "../../ui/sharedLyout/Buttons/ButtonNews";
 
-const  NavBar = () => {
+const NavBar = () => {
   const isLogged = useSelector(getIsLogged);
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
 
   return (
-    <AppBar sx={{backgroundColor:"black",  display: "flex", justifyContent: "flex-start", position:"sticky",zIndex:10 }}>
+    <AppBar
+      sx={{
+        backgroundColor: "black",
+        display: "flex",
+        justifyContent: "flex-start",
+        position: "sticky",
+        zIndex: 10,
+      }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display:"flex" }}>
-            <ButtonHome/>
-             <ButtonNews/>
+          <Box sx={{ flexGrow: 1, display: "flex" }}>
+            <ButtonHome />
+            <ButtonNews />
             {isLogged ? (
-                <Button sx={{ my: 2, color: "lightgoldenrodyellow",  display: "block" }}  onClick={() => navigate("/profile")} >
-                  {t('profile')} 
-                  <AccountBoxIcon />
-                </Button>
+              <Button
+                sx={{ my: 2, color: "lightgoldenrodyellow", display: "block" }}
+                onClick={() => navigate("/profile")}
+              >
+                {t("profile")}
+                <AccountBoxIcon />
+              </Button>
             ) : (
-                <Authorization />
+              <Authorization />
             )}
           </Box>
-          <Box sx={{ flexGrow: 0, display:"flex" }}>
-            <LanguageSwitcher/>
+          <Box sx={{ flexGrow: 0, display: "flex" }}>
+            <LanguageSwitcher />
           </Box>
         </Toolbar>
       </Container>
     </AppBar>
   );
-}
-export default NavBar
+};
+export default NavBar;

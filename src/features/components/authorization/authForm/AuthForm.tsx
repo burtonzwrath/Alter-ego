@@ -3,15 +3,11 @@ import { Grid, Paper, TextField, Button, InputAdornment } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import LogoutIcon from "@mui/icons-material/Logout";
-const AuthForm: React.FC<any> = ({
-  setPassword,
-  setUserName,
-  userName,
-  password,
-  setHideForm,
-}) => {
-  const [visible, setVisible] = useState(false);
-  const paperStyle: any = {
+import { AuthFormTypes } from "../AuthorizationTypes";
+import { makeStyles } from "@mui/styles";
+
+const styles = makeStyles({
+  paper: {
     padding: 10,
     height: "230px",
     width: "200px",
@@ -23,12 +19,28 @@ const AuthForm: React.FC<any> = ({
     boxShadow: "3px 3px 3px 3px black",
     color: "black",
     backgroundColor: "lightgoldenrodyellow",
-  };
-  const btnstyle = {
+  },
+  signInButton: {
     margin: "8px 0",
     backgroundColor: "black",
     color: "mediumslateblue",
-  };
+  },
+  logOutIcon: {
+    position: "absolute",
+    right: "5px",
+    borderRadius: "50%",
+  },
+});
+
+const AuthForm: React.FC<AuthFormTypes> = ({
+  setPassword,
+  setUserName,
+  userName,
+  password,
+  setHideForm,
+}) => {
+  const [visible, setVisible] = useState(false);
+  const s = styles();
 
   const handleCloseForm = (): void => {
     setHideForm((prevState: boolean) => !prevState);
@@ -36,11 +48,8 @@ const AuthForm: React.FC<any> = ({
 
   return (
     <Grid>
-      <Paper elevation={10} style={paperStyle}>
-        <LogoutIcon
-          onClick={handleCloseForm}
-          sx={{ position: "absolute", right: "5px", borderRadius: "50%" }}
-        />
+      <Paper className={s.paper} elevation={10}>
+        <LogoutIcon className={s.logOutIcon} onClick={handleCloseForm} />
         <Grid>
           <h3>Authorization</h3>
         </Grid>
@@ -73,13 +82,7 @@ const AuthForm: React.FC<any> = ({
           fullWidth
           required
         />
-        <Button
-          type="submit"
-          color="primary"
-          variant="contained"
-          style={btnstyle}
-          fullWidth
-        >
+        <Button className={s.signInButton} type="submit" variant="contained">
           Sign in
         </Button>
       </Paper>
