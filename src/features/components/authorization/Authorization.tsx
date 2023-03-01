@@ -33,7 +33,7 @@ const Authorization = () => {
 
   const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (userName === "admin" && password === "1234") {
+    if (userName === "admin" && password === "12345") {
       setLocalStorageItem(userName, password);
       dispatch(setLogin(true));
       navigate("/profile");
