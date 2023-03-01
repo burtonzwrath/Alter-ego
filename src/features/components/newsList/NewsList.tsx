@@ -24,7 +24,7 @@ export const NewsList: React.FC<newListTypes> = ({ news, handleDelete }) => {
   const { t } = useTranslation();
   return (
     <Box className={s.list}>
-      <Typography> {t("newsList")}</Typography>
+      <Typography variant="h3"> {t("newsList")}</Typography>
       {news.map((item) => (
         <NewsListItem handleDelete={handleDelete} key={item.id} item={item} />
       ))}

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 
 const styles = makeStyles({
   container: {
-    border: "1px solid black",
+    border: "13px solid black",
     backgroundColor: "burlywood",
     display: "flex",
     flexDirection: "column",

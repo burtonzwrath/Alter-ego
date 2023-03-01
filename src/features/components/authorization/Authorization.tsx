@@ -12,14 +12,15 @@ import {getLocalStorageItem, setLocalStorageItem} from "../../../helpers/locatSt
 const styles = makeStyles({
   modal: {
     position: "absolute",
-    top: "30%",
-    left: "30%",
-    transform: "translate(-30%, -30%)",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
     width: 280,
     backgroundColor: "black",
     border: "2px solid #000",
-    padding: 15,
+    padding: 35,
     borderRadius: 10,
+
   },
   form: {
     display: "flex",

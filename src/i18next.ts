@@ -12,7 +12,9 @@ i18n.use(initReactI18next).init({
                 news:"News",
                 login:"Login",
                 newsList:"News List",
-                download:"Download more"
+                download:"Download more",
+                ukraine:"Ukraine",
+                isHome:"is my home"
             },
         },
         ukr: {
@@ -22,7 +24,9 @@ i18n.use(initReactI18next).init({
                 news:"Новини",
                 login:"Увійти",
                 newsList:"Новини",
-                download:"Завантажити ще"
+                download:"Завантажити ще",
+                ukraine:"Украина",
+                isHome:"- мой дом"
             },
         },
     },
