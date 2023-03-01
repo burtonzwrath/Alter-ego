@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef } from "react";
 import { Box, Button, Slide } from "@mui/material";
 import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { getNews } from "../../../redux/news/selectors";
+import { getNews } from "../../../redux/news/selectors/selectors";
 import { makeStyles } from "@mui/styles";
 import { useTranslation } from "react-i18next";
 
@@ -12,10 +12,11 @@ const styles = makeStyles({
     justifyContent: "center",
     backgroundColor: "black",
     zIndex: "12",
-    width: "200px",
-  },
-  buttonDownload: {
-    color: "lightgoldenrodyellow",
+    width: "160px",
+    borderRadius:"5px",
+    "&:hover": {
+      color: "burlywood",
+    },
   },
 });
 
@@ -42,7 +43,7 @@ const ButtonDownload: React.FC = () => {
   return (
     <Slide in={true} timeout={1000} direction="right">
       <Box className={s.buttonWrapper}>
-        <Button className={s.buttonDownload} onClick={showMore}>
+        <Button sx={{color:"lightsteelblue", "&:hover": {color: "burlywood",}}}  onClick={showMore}>
           {t("download")}
         </Button>
         <div ref={lastRef}></div>

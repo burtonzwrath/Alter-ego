@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { Grid, Paper, TextField, Button, InputAdornment } from "@mui/material";
+import { Grid, Box, TextField, Button, InputAdornment } from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { AuthFormTypes } from "../AuthorizationTypes";
 import { makeStyles } from "@mui/styles";
+import SignInButton from "../../../ui/buttons/SignInButton";
+
 
 const styles = makeStyles({
   paper: {
@@ -30,6 +32,10 @@ const styles = makeStyles({
     right: "5px",
     borderRadius: "50%",
   },
+  authTitle:{
+    display:"flex",
+    justifyContent:"center"
+  }
 });
 
 const AuthForm: React.FC<AuthFormTypes> = ({
@@ -48,9 +54,9 @@ const AuthForm: React.FC<AuthFormTypes> = ({
 
   return (
     <Grid>
-      <Paper className={s.paper} elevation={10}>
+      <Box className={s.paper} >
         <LogoutIcon className={s.logOutIcon} onClick={handleCloseForm} />
-        <Grid>
+        <Grid className={s.authTitle}>
           <h3>Authorization</h3>
         </Grid>
         <TextField
@@ -82,10 +88,8 @@ const AuthForm: React.FC<AuthFormTypes> = ({
           fullWidth
           required
         />
-        <Button className={s.signInButton} type="submit" variant="contained">
-          Sign in
-        </Button>
-      </Paper>
+        <SignInButton />
+      </Box>
     </Grid>
   );
 };

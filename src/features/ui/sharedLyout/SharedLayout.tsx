@@ -6,15 +6,19 @@ import { Box } from "@mui/material";
 
 const styles = makeStyles({
   container: {
+    border: "1px solid black",
     backgroundColor: "burlywood",
-    height: "100vh",
     display: "flex",
     flexDirection: "column",
+    alignItems: "center",
+    minHeight:"800px",
+    maxWidth:"1400px",
+    margin:"0 auto"
   },
 });
 
 function SharedLayout() {
-  const s = styles()
+  const s = styles();
 
   return (
     <Box className={s.container}>

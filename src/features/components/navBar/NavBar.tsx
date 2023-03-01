@@ -1,24 +1,21 @@
 import Authorization from "../authorization/Authorization";
-import { getIsLogged } from "../../../redux/news/selectors";
+import { getIsLogged } from "../../../redux/news/selectors/selectors";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher";
 import ButtonHome from "../../ui/buttons/ButtonHome";
 import ButtonNews from "../../ui/buttons/ButtonNews";
 import { makeStyles } from "@mui/styles";
 import ButtonProfile from "../../ui/buttons/ButtonProfile";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
-import {AppBar} from "@mui/material";
 import { useSelector } from "react-redux";
-
 
 const styles = makeStyles({
   navBarWrapper: {
     backgroundColor: "black",
     display: "flex",
-    justifyContent: "flex-start",
-    position: "sticky",
+    justifyContent: "space-between",
     zIndex: 10,
+    width: "100%",
+    minHeight:"50px"
   },
   buttonsWrapper: {
     flexGrow: 1,
@@ -36,22 +33,14 @@ const NavBar = () => {
   const isLogged = useSelector(getIsLogged);
 
   return (
-    <AppBar >
-      <Container maxWidth="xl" className={s.navBarWrapper}>
-        <Toolbar disableGutters>
-          <Box className={s.buttonsWrapper}>
-            <ButtonHome />
-            <ButtonNews />
-            {isLogged ? (
-              <ButtonProfile/>
-            ) : (
-              <Authorization />
-            )}
-          </Box>
-          <LanguageSwitcher />
-        </Toolbar>
-      </Container>
-    </AppBar>
+    <Box className={s.navBarWrapper}>
+      <Box className={s.buttonsWrapper}>
+        <ButtonHome />
+        <ButtonNews />
+        {isLogged ? <ButtonProfile /> : <Authorization />}
+      </Box>
+      <LanguageSwitcher />
+    </Box>
   );
 };
 export default NavBar;

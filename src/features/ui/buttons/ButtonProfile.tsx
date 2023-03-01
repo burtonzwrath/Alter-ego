@@ -6,10 +6,14 @@ import {useTranslation} from "react-i18next";
 
 const ProfileButton = styled(Button)({
   my: 2,
+  "&:hover": {
+    color: "burlywood",
+  },
   color: "lightgoldenrodyellow",
   display: "flex",
   justifyContent:"flex-end",
   minWidth:"120px",
+  height:"45px",
   alignItems:"flex-end"
 }) as typeof Button;
 
@@ -20,7 +24,7 @@ const ButtonProfile: React.FC = () => {
   return (
     <ProfileButton onClick={() => navigate("/profile")}>
       {t("profile")}
-      <AccountBoxIcon sx={{alignSelf:"flex-start"}} />
+      <AccountBoxIcon  />
     </ProfileButton>
   );
 };

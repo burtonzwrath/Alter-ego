@@ -1,5 +1,4 @@
 import * as React from "react";
-import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Stack";
@@ -14,29 +13,29 @@ const ButtonUkrLang = styled(Button)({
   "&:focus": {
     backgroundColor: "gray",
   },
+  "&:hover": {
+    color: "burlywood",
+    backgroundColor: "gray",
+  },
 }) as typeof Button;
 
 const ButtonEngLang = styled(Button)({
   width: "3px",
   height: "20px",
-  color: "lightskyblue",
+  color: "lightsteelblue",
   transition: "1s",
   "&:focus": {
     backgroundColor: "gray",
   },
-}) as typeof Button;
-
-const useStyles = makeStyles({
-  langWrapper: {
-    display: "flex",
-    gap: "10px",
+  "&:hover": {
+    color: "burlywood",
+    backgroundColor: "gray",
   },
-});
+}) as typeof Button;
 
 const LanguageSwitcher = () => {
   const [langEn, setLangEn] = useState(false);
   const [langUkr, setLangUkr] = useState(true);
-  const s = useStyles();
 
   const switchLanguage = (e: any) => {
     if (e.target.dataset.leng === "false") {
@@ -45,13 +44,20 @@ const LanguageSwitcher = () => {
     }
 
     i18n.changeLanguage(e.target.id, (err, t) => {
-      console.log(e.target.id)
+      console.log(e.target.id);
       if (err) return console.log("something went wrong loading", err);
     });
   };
 
   return (
-    <Box className={s.langWrapper}>
+    <Box
+      sx={{
+        flexDirection: "row",
+        gap: "10px",
+        alignItems: "center",
+        padding: "0 15px",
+      }}
+    >
       <ButtonUkrLang
         data-leng={langUkr}
         sx={{ backgroundColor: langUkr ? "gray" : "black" }}

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setFlag } from "../redux/news/newsSlice";
-import { getNews } from "../redux/news/selectors";
+import { getNews } from "../redux/news/selectors/selectors";
 
 const HomePage = () => {
   const news = useSelector(getNews);

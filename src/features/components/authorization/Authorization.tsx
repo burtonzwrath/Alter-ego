@@ -16,7 +16,7 @@ const styles = makeStyles({
     left: "30%",
     transform: "translate(-30%, -30%)",
     width: 280,
-    backgroundColor: "white",
+    backgroundColor: "black",
     border: "2px solid #000",
     padding: 15,
     borderRadius: 10,
@@ -33,13 +33,17 @@ const styles = makeStyles({
     position: "relative",
     cursor: "pointer",
     alignItems: "center",
+
   },
   buttonHide: {
     width: 120,
     height: 22,
     display: "flex",
-    color: "mediumslateblue",
+    color: "lightsteelblue",
     justifyContent: "center",
+    "&:hover": {
+      color: "burlywood",
+    },
   },
 });
 
@@ -108,8 +112,7 @@ const Authorization = () => {
           <Typography
             id="modal-modal-description"
             variant="h6"
-            color={"red"}
-            sx={{ mt: 2 }}
+            color={"lightgoldenrodyellow"}
           >
             Wrong username or password
           </Typography>

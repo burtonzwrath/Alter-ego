@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchNews } from "./operations";
-import {stateType} from "./selectorTypes";
+import { stateType } from "./selectors/selectorTypes";
 
 const newsSlice = createSlice({
   name: "news",
@@ -10,22 +10,21 @@ const newsSlice = createSlice({
     isLogged: false,
     status: null,
     error: null,
-    flag:false,
+    flag: false,
   },
   reducers: {
     increment(state) {
       state.currentPage += 1;
     },
     deleteNews(state, action) {
-      state.news = [...state.news.filter(item=>item.id!==action.payload)]
-    }
-    ,
-    setLogin(state, action) {
-      state.isLogged = action.payload
+      state.news = [...state.news.filter((item) => item.id !== action.payload)];
     },
-    setFlag(state, action){
-      state.flag = action.payload
-    }
+    setLogin(state, action) {
+      state.isLogged = action.payload;
+    },
+    setFlag(state, action) {
+      state.flag = action.payload;
+    },
   },
   extraReducers: {
     [fetchNews.fulfilled]: (state, action) => {
@@ -38,5 +37,5 @@ const newsSlice = createSlice({
     },
   },
 });
-export const { increment, setLogin, setFlag, deleteNews} = newsSlice.actions;
+export const { increment, setLogin, setFlag, deleteNews } = newsSlice.actions;
 export default newsSlice.reducer;

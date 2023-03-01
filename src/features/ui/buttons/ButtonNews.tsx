@@ -6,9 +6,13 @@ import { useTranslation } from "react-i18next";
 
 const NewsButton = styled(Button)({
   my: 2,
+  "&:hover": {
+    color: "burlywood",
+  },
   color: "lightgoldenrodyellow",
   display: "flex",
   justifyContent:"flex-end",
+  height:"45px",
   minWidth:"120px",
   alignItems:"flex-end"
 }) as typeof Button;
