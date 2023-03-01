@@ -3,6 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/getNews.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getNews.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/navBar/navBarStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/navBarStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/news/newsSlice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/newsSlice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/news/operations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/operations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/news/selectors/selectorTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/selectors/selectorTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/news/selectors/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/selectors/selectors.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +76,7 @@
       <workItem from="1677649412710" duration="15943000" />
       <workItem from="1677666212646" duration="2859000" />
       <workItem from="1677669096778" duration="942000" />
-      <workItem from="1677670051099" duration="22563000" />
+      <workItem from="1677670051099" duration="27935000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -186,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677695769105</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="password fix">
+      <created>1677696312320</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1677696312320</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

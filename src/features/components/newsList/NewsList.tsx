@@ -5,18 +5,21 @@ import { newListTypes } from "./newsListTypes";
 import ButtonDownload from "../downloadButton/ButtonDownload";
 import { useTranslation } from "react-i18next";
 import { newsListStyles } from "./newsListStyles";
+import { getIsLoading } from "../../../redux/news/selectors/selectors";
+import { useSelector } from "react-redux";
 
-export const NewsList: React.FC<newListTypes> = ({ news, handleDelete }) => {
+export const NewsList: React.FC<newListTypes> = ({ news }) => {
   const s = newsListStyles();
   const { t } = useTranslation();
+  const isLoading = useSelector(getIsLoading);
 
   return (
     <Box className={s.list}>
       <Typography variant="h3"> {t("newsList")}</Typography>
       {news.map((item) => (
-        <NewsListItem handleDelete={handleDelete} key={item.id} item={item} />
+        <NewsListItem key={item.id} item={item} />
       ))}
-      <ButtonDownload />
+      {isLoading ? <Typography>Loading...</Typography> : <ButtonDownload />}
     </Box>
   );
 };

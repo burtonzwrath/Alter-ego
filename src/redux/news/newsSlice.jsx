@@ -8,9 +8,11 @@ const newsSlice = createSlice({
     currentPage: 1,
     news: [],
     isLogged: false,
+    isLoading:true,
     status: null,
     error: null,
     flag: false,
+
   },
   reducers: {
     increment(state) {
@@ -25,6 +27,9 @@ const newsSlice = createSlice({
     setFlag(state, action) {
       state.flag = action.payload;
     },
+    setLoading(state, action) {
+      state.isLoading = action.payload
+    }
   },
   extraReducers: {
     [fetchNews.fulfilled]: (state, action) => {
@@ -37,5 +42,6 @@ const newsSlice = createSlice({
     },
   },
 });
-export const { increment, setLogin, setFlag, deleteNews } = newsSlice.actions;
+export const { increment, setLogin, setFlag, deleteNews, setLoading } = newsSlice.actions;
 export default newsSlice.reducer;
+

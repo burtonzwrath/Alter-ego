@@ -6,5 +6,6 @@ export type stateType = {
     status: boolean;
     error: boolean;
     flag: boolean;
+    isLoading:true
   };
 };
