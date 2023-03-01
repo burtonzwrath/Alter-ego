@@ -2,8 +2,8 @@ import {makeStyles} from "@mui/styles";
 
 export const HomePagestyles = makeStyles({
     homeWrapper: {
+        paddingTop:"120px",
         minHeight: "800px",
-        padding:"60px",
         display:"flex",
         flexDirection:"column",
         alignItems:"center"
@@ -24,8 +24,9 @@ export const HomePagestyles = makeStyles({
             width:"800px",
             height:"500px",
         },
-        typography:{
-
+        homeWrapper:{
+            paddingTop:"60px",
         }
+
     }
 });

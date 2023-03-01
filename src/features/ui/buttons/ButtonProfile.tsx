@@ -12,9 +12,12 @@ const ProfileButton = styled(Button)({
   color: "lightgoldenrodyellow",
   display: "flex",
   justifyContent: "flex-end",
-  minWidth: "120px",
   height: "45px",
   alignItems: "flex-end",
+  minWidth:"0",
+  "@media (min-width: 550px)": {
+    minWidth:"120px",
+  }
 }) as typeof Button;
 
 const ButtonProfile: React.FC = () => {

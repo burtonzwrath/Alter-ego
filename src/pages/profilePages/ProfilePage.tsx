@@ -24,7 +24,7 @@ const ProfilePage = () => {
         variant="h3"
         sx={{
           fontSize: {
-            lg: 60,
+            lg: 47,
             md: 40,
             sm: 30,
             xs: 30,

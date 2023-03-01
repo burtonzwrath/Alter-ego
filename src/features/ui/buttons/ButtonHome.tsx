@@ -14,7 +14,10 @@ const HomeButton = styled(Button)({
   justifyContent:"flex-end",
   alignItems:"flex-end",
   height:"45px",
-  minWidth:"120px"
+  minWidth:"0",
+  "@media (min-width: 550px)": {
+    minWidth:"120px",
+  }
 }) as typeof Button;
 
 const ButtonHome: React.FC = () => {

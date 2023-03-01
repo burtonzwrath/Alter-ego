@@ -2,7 +2,7 @@ import {makeStyles} from "@mui/styles";
 
 export const profilePageStyles = makeStyles({
     profileWrapper: {
-        marginTop: "60px",
+        marginTop: "140px",
         minHeight: "800px",
     },
     profileImg: {
@@ -16,6 +16,9 @@ export const profilePageStyles = makeStyles({
             width:"800px",
             height:"300px",
         },
+            profileWrapper: {
+                marginTop: "60px",
+            },
 
     },
 });

@@ -13,8 +13,11 @@ const NewsButton = styled(Button)({
   display: "flex",
   justifyContent:"flex-end",
   height:"45px",
-  minWidth:"120px",
-  alignItems:"flex-end"
+  alignItems:"flex-end",
+  minWidth:"0",
+   "@media (min-width: 550px)": {
+    minWidth:"120px",
+  }
 }) as typeof Button;
 
 const ButtonNews: React.FC = () => {

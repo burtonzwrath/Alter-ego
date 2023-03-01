@@ -2,37 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/authFormStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/components/downloadButton/buttonDownloadStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/components/languageSwitcher/buttonsLanguage/buttonEngLang.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/components/languageSwitcher/buttonsLanguage/buttonUkrLang.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/HomePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/homePage/homePageStyles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profilePages/ProfilePage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/profilePages/profilePageStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/navBar/navBarStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListStyles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/getNews.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getNews.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/Ukraine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homePage/Ukraine.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/laptop.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/image/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/profilePage/profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/AuthorizationTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/components/languageSwitcher/LanguageSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/languageSwitcher/LanguageSwitcher.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonHome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonHome.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonProfile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/sharedLyout/SharedLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/sharedLyout/SharedLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18next.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18next.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/ProfilePage.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/homePage/homePageStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homePage/homePageStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profilePages/profilePageStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profilePages/profilePageStyles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +76,7 @@
       <workItem from="1677649412710" duration="15943000" />
       <workItem from="1677666212646" duration="2859000" />
       <workItem from="1677669096778" duration="942000" />
-      <workItem from="1677670051099" duration="14799000" />
+      <workItem from="1677670051099" duration="17319000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -167,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677680334218</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="media query">
+      <created>1677687835118</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677687835118</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,6 +171,7 @@
     <MESSAGE value="home page" />
     <MESSAGE value="profile" />
     <MESSAGE value="sticky navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="sticky navbar" />
+    <MESSAGE value="media query" />
+    <option name="LAST_COMMIT_MESSAGE" value="media query" />
   </component>
 </project>

@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
   return (
     <Box
       sx={{
-        flexDirection: "row",
+        flexDirection:"row",
         gap: "10px",
         alignItems: "center",
         padding: "0 15px",

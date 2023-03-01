@@ -26,7 +26,6 @@ export const authorizationStyles = makeStyles({
         alignItems: "center",
     },
     buttonHide: {
-        width: 120,
         height: 22,
         display: "flex",
         color: "lightsteelblue",
@@ -34,5 +33,9 @@ export const authorizationStyles = makeStyles({
         "&:hover": {
             color: "burlywood",
         },
+        minWidth:"0",
+        "@media (min-width: 550px)": {
+            minWidth:"120px",
+        }
     },
 });
