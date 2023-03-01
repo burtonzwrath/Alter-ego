@@ -14,7 +14,7 @@ const ProfilePage = () => {
   const s = profilePageStyles();
 
   useEffect(() => {
-    if (!isLogged) navigate("/");
+    if (!isLogged) navigate("/home");
   }, [isLogged]);
 
   return (

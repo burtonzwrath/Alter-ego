@@ -14,9 +14,10 @@ const App:React.FC = () => {
       <Provider store={store}>
               <Routes>
                   <Route path="/" element={<SharedLayout />}>
-                      <Route index element={<HomePage />}/>
-                      <Route path="/news" element={<NewsPage/>} />
+                      <Route path ="/home" element={<HomePage />}/>
+                      <Route index path="/news" element={<NewsPage/>} />
                       <Route path="/profile" element={<ProfilePage/>} />
+                      <Route path="*" element={<NewsPage/>} />
                   </Route>
               </Routes>
       </Provider>

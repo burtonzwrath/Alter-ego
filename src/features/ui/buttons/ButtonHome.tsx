@@ -25,7 +25,7 @@ const ButtonHome: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <HomeButton onClick={() => navigate("/")}>
+    <HomeButton onClick={() => navigate("/home")}>
       {t("home")}
       <HomeIcon sx={{alignSelf:"flex-start", display:"flex"}} />
     </HomeButton>
