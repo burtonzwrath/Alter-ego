@@ -22,9 +22,9 @@ const ButtonProfile: React.FC = () => {
   const {t} = useTranslation()
 
   return (
-    <ProfileButton onClick={() => navigate("/profile")}>
+    <ProfileButton   onClick={() => navigate("/profile")}>
       {t("profile")}
-      <AccountBoxIcon  />
+      <AccountBoxIcon sx={{alignSelf:"flex-start"}}  />
     </ProfileButton>
   );
 };
