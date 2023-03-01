@@ -18,8 +18,8 @@ const NewsPage = () => {
   const news = useSelector(getNews);
   const currentPage = useSelector(getCurrentPage);
   const flag = useSelector(getFlag);
-  const status = useSelector(getStatus);
-  const error = useSelector(getError);
+  // const status = useSelector(getStatus);
+  // const error = useSelector(getError);
 
   useEffect(() => {
     if (!flag) {
