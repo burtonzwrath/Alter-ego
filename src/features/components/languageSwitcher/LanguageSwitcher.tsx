@@ -1,9 +1,9 @@
 import * as React from "react";
+import { makeStyles } from "@mui/styles";
+import { useState } from "react";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Stack";
 import i18n from "i18next";
-import { makeStyles } from "@mui/styles";
-import { useState } from "react";
 import { styled } from "@mui/material/styles";
 
 const ButtonUkrLang = styled(Button)({
@@ -45,6 +45,7 @@ const LanguageSwitcher = () => {
     }
 
     i18n.changeLanguage(e.target.id, (err, t) => {
+      console.log(e.target.id)
       if (err) return console.log("something went wrong loading", err);
     });
   };

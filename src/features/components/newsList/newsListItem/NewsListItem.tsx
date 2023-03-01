@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import DeleteSweepOutlinedIcon from "@mui/icons-material/DeleteSweepOutlined";
 import { Box, ListItemText, Paper, Slide } from "@mui/material";
-import { newListItemTypes } from "./newListTypes";
 import { makeStyles } from "@mui/styles";
+import DeleteSweepOutlinedIcon from "@mui/icons-material/DeleteSweepOutlined";
+import { newListItemTypes } from "./newListTypes";
 
 const styles = makeStyles({
 

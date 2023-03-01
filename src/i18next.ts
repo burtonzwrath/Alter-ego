@@ -1,9 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next} from "react-i18next";
 
-
 i18n.use(initReactI18next).init({
-    lng: "en", // Язык по умолчанию
+    lng: "ukr", // Язык по умолчанию
     fallbackLng: "en", // Язык, используемый при отсутствии перевода для запрошенного языка
     resources: {
         en: {
@@ -11,7 +10,9 @@ i18n.use(initReactI18next).init({
                 home: "Home",
                 profile:"Profile",
                 news:"News",
-                login:"Login"
+                login:"Login",
+                newsList:"News List",
+                download:"Download more"
             },
         },
         ukr: {
@@ -19,7 +20,9 @@ i18n.use(initReactI18next).init({
                 home: "Додому",
                 profile:"Профіль",
                 news:"Новини",
-                login:"Увійти"
+                login:"Увійти",
+                newsList:"Новини",
+                download:"Завантажити ще"
             },
         },
     },

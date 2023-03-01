@@ -14,7 +14,6 @@ import {
 } from "../redux/news/selectors";
 
 const  NewsPage = () =>{
-    console.log("render")
   const dispatch = useDispatch<AppDispatch>();
   const news = useSelector(getNews);
   const currentPage = useSelector(getCurrentPage);

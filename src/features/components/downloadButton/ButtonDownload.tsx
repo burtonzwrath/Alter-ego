@@ -4,6 +4,7 @@ import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getNews } from "../../../redux/news/selectors";
 import { makeStyles } from "@mui/styles";
+import { useTranslation } from "react-i18next";
 
 const styles = makeStyles({
   buttonWrapper: {
@@ -23,6 +24,7 @@ const ButtonDownload: React.FC = () => {
   const dispatch = useDispatch();
   const lastRef = useRef<HTMLDivElement | null>(null);
   const news = useSelector(getNews);
+  const { t } = useTranslation();
 
   useEffect(() => {
     lastRef?.current?.scrollIntoView({
@@ -41,7 +43,7 @@ const ButtonDownload: React.FC = () => {
     <Slide in={true} timeout={1000} direction="right">
       <Box className={s.buttonWrapper}>
         <Button className={s.buttonDownload} onClick={showMore}>
-          download next news
+          {t("download")}
         </Button>
         <div ref={lastRef}></div>
       </Box>

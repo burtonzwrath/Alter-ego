@@ -1,8 +1,3 @@
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
-import {AppBar, Button} from "@mui/material";
-import { useSelector } from "react-redux";
 import Authorization from "../authorization/Authorization";
 import { getIsLogged } from "../../../redux/news/selectors";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher";
@@ -10,7 +5,11 @@ import ButtonHome from "../../ui/buttons/ButtonHome";
 import ButtonNews from "../../ui/buttons/ButtonNews";
 import { makeStyles } from "@mui/styles";
 import ButtonProfile from "../../ui/buttons/ButtonProfile";
-import {styled} from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Container from "@mui/material/Container";
+import {AppBar} from "@mui/material";
+import { useSelector } from "react-redux";
 
 
 const styles = makeStyles({
