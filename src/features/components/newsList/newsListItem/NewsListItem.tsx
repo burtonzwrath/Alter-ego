@@ -2,35 +2,42 @@ import React, { useState } from "react";
 import DeleteSweepOutlinedIcon from "@mui/icons-material/DeleteSweepOutlined";
 import { Box, ListItemText, Paper, Slide } from "@mui/material";
 import { newListItemTypes } from "./newListTypes";
+import { makeStyles } from "@mui/styles";
+
+const styles = makeStyles({
+
+  itemWrapper: {
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "10px",
+    alignItems: "center",
+  },
+  deleteIcon: {
+    borderLeft: "1px solid black",
+    width: "40px",
+    borderRadius: "5px",
+    backgroundColor: "black",
+    cursor: "pointer",
+    color: "lightgoldenrodyellow",
+  },
+});
 export const NewsListItem: React.FC<newListItemTypes> = ({
   item,
   handleDelete,
 }) => {
   const [set, setSet] = useState(true);
+  const s = styles();
 
   return (
     <Slide in={set} timeout={1000} direction="left">
-      <Paper
-        elevation={3}
-        sx={{
-          width: "100%",
-          marginBottom: "10px",
-          backgroundColor: "lightgoldenrodyellow",
-          boxShadow: "3px 3px 3px 3px black",
-        }}
-      >
-        <Box sx={{ padding: "2px 20px" }}>
-          <Box sx={{display:"flex", justifyContent:"space-between",gap:"10px", alignItems:"center"}}>
+
+        <Box sx={{ padding: "2px 20px", backgroundColor:"lightgoldenrodyellow" , width:"100%",
+            boxShadow: "3px 3px 3px 3px black",
+            borderRadius:"10px"}}>
+          <Box className={s.itemWrapper}>
             <ListItemText>{item.title}</ListItemText>
             <DeleteSweepOutlinedIcon
-              sx={{
-                borderLeft: "1px solid black",
-                width: "40px",
-                borderRadius: "5px",
-                backgroundColor: "black",
-                cursor: "pointer",
-                color: "lightgoldenrodyellow",
-              }}
+              className={s.deleteIcon}
               onClick={(e) => {
                 handleDelete(item.id);
                 setSet((prev) => !prev);
@@ -40,7 +47,6 @@ export const NewsListItem: React.FC<newListItemTypes> = ({
             </DeleteSweepOutlinedIcon>
           </Box>
         </Box>
-      </Paper>
     </Slide>
   );
 };

@@ -3,21 +3,26 @@ import { Box, Button, Slide } from "@mui/material";
 import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getNews } from "../../../redux/news/selectors";
-import {styled} from "@mui/material/styles";
+import { makeStyles } from "@mui/styles";
 
-const DownloadButton = styled(Button)({
-    color: "lightgoldenrodyellow"
-}) as typeof Button;
+const styles = makeStyles({
+  buttonWrapper: {
+    display: "flex",
+    justifyContent: "center",
+    backgroundColor: "black",
+    zIndex: "12",
+    width: "200px",
+  },
+  buttonDownload: {
+    color: "lightgoldenrodyellow",
+  },
+});
 
 const ButtonDownload: React.FC = () => {
+  const s = styles();
   const dispatch = useDispatch();
   const lastRef = useRef<HTMLDivElement | null>(null);
   const news = useSelector(getNews);
-
-  const showMore = useCallback(() => {
-    dispatch(increment());
-    dispatch(setFlag(false));
-  },[increment,setFlag,dispatch])
 
   useEffect(() => {
     lastRef?.current?.scrollIntoView({
@@ -27,24 +32,21 @@ const ButtonDownload: React.FC = () => {
     });
   }, [news]);
 
+  const showMore = useCallback(() => {
+    dispatch(increment());
+    dispatch(setFlag(false));
+  }, [increment, setFlag, dispatch]);
+
   return (
     <Slide in={true} timeout={1000} direction="right">
-      <Box
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          backgroundColor: "black",
-          zIndex: "12",
-          width: "200px",
-        }}
-      >
-        <DownloadButton  onClick={showMore}>
+      <Box className={s.buttonWrapper}>
+        <Button className={s.buttonDownload} onClick={showMore}>
           download next news
-        </DownloadButton>
+        </Button>
         <div ref={lastRef}></div>
       </Box>
     </Slide>
   );
 };
 
-export default React.memo(ButtonDownload) ;
+export default React.memo(ButtonDownload);

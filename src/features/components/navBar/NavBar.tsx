@@ -1,53 +1,55 @@
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import { AppBar } from "@mui/material";
-import { useNavigate } from "react-router";
-import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import Authorization from "../authorization/Authorization";
+import {AppBar, Button} from "@mui/material";
 import { useSelector } from "react-redux";
+import Authorization from "../authorization/Authorization";
 import { getIsLogged } from "../../../redux/news/selectors";
 import LanguageSwitcher from "../languageSwitcher/LanguageSwitcher";
-import { useTranslation } from "react-i18next";
-import ButtonHome from "../../ui/sharedLyout/Buttons/ButtonHome";
-import ButtonNews from "../../ui/sharedLyout/Buttons/ButtonNews";
+import ButtonHome from "../../ui/buttons/ButtonHome";
+import ButtonNews from "../../ui/buttons/ButtonNews";
+import { makeStyles } from "@mui/styles";
+import ButtonProfile from "../../ui/buttons/ButtonProfile";
+import {styled} from "@mui/material/styles";
+
+
+const styles = makeStyles({
+  navBarWrapper: {
+    backgroundColor: "black",
+    display: "flex",
+    justifyContent: "flex-start",
+    position: "sticky",
+    zIndex: 10,
+  },
+  buttonsWrapper: {
+    flexGrow: 1,
+    display: "flex",
+  },
+  buttonProfile: {
+    my: 2,
+    color: "lightgoldenrodyellow",
+    display: "block",
+  },
+});
 
 const NavBar = () => {
+  const s = styles();
   const isLogged = useSelector(getIsLogged);
-  const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
 
   return (
-    <AppBar
-      sx={{
-        backgroundColor: "black",
-        display: "flex",
-        justifyContent: "flex-start",
-        position: "sticky",
-        zIndex: 10,
-      }}
-    >
-      <Container maxWidth="xl">
+    <AppBar >
+      <Container maxWidth="xl" className={s.navBarWrapper}>
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: "flex" }}>
+          <Box className={s.buttonsWrapper}>
             <ButtonHome />
             <ButtonNews />
             {isLogged ? (
-              <Button
-                sx={{ my: 2, color: "lightgoldenrodyellow", display: "block" }}
-                onClick={() => navigate("/profile")}
-              >
-                {t("profile")}
-                <AccountBoxIcon />
-              </Button>
+              <ButtonProfile/>
             ) : (
               <Authorization />
             )}
           </Box>
-          <Box sx={{ flexGrow: 0, display: "flex" }}>
-            <LanguageSwitcher />
-          </Box>
+          <LanguageSwitcher />
         </Toolbar>
       </Container>
     </AppBar>
