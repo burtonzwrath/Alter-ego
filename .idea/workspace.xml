@@ -2,8 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/authFormStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/downloadButton/buttonDownloadStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/languageSwitcher/buttonsLanguage/buttonEngLang.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/components/languageSwitcher/buttonsLanguage/buttonUkrLang.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/homePage/HomePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/homePage/homePageStyles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profilePages/ProfilePage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/profilePages/profilePageStyles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/getNews.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getNews.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/Ukraine.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/homePage/Ukraine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/laptop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/image/profilePage/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/AuthorizationTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/languageSwitcher/LanguageSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/languageSwitcher/LanguageSwitcher.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonProfile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/sharedLyout/SharedLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/sharedLyout/SharedLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18next.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18next.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProfilePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +63,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../alter_ego" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/features/components/languageSwitcher" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\DoctorWebSite\Alter-ego\node_modules\prettier" />
     <property name="ts.external.directory.path" value="D:\DoctorWebSite\Alter-ego\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\languageSwitcher" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\DoctorWebSite\Alter-ego\src\redux\news\selectors" />
-      <recent name="D:\DoctorWebSite\Alter-ego\src" />
-      <recent name="D:\DoctorWebSite\Alter-ego\src\features\ui" />
-      <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\downloadButton" />
-      <recent name="D:\DoctorWebSite\Alter-ego\src\features\ui\sharedLyout\Buttons" />
+      <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\languageSwitcher\buttonsLanguage" />
+      <recent name="D:\DoctorWebSite\Alter-ego\src\features\components\authorization" />
+      <recent name="D:\DoctorWebSite\Alter-ego\src\pages\profilePages" />
+      <recent name="D:\DoctorWebSite\Alter-ego\src\pages\newsPage" />
+      <recent name="D:\DoctorWebSite\Alter-ego\src\pages\HomePage" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,7 +95,7 @@
       <workItem from="1677649412710" duration="15943000" />
       <workItem from="1677666212646" duration="2859000" />
       <workItem from="1677669096778" duration="942000" />
-      <workItem from="1677670051099" duration="10164000" />
+      <workItem from="1677670051099" duration="14799000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -128,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677679995771</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="sticky navbar">
+      <created>1677680334218</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1677680334218</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +182,7 @@
     <MESSAGE value="leng switcher" />
     <MESSAGE value="home page" />
     <MESSAGE value="profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile" />
+    <MESSAGE value="sticky navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="sticky navbar" />
   </component>
 </project>

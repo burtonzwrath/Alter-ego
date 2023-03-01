@@ -4,9 +4,9 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import {Route,Routes} from "react-router-dom";
 import SharedLayout from "./features/ui/sharedLyout/SharedLayout";
-import HomePage from "./pages/HomePage";
-import NewsPage from "./pages/NewsPage";
-import ProfilePage from "./pages/ProfilePage";
+import HomePage from "./pages/homePage/HomePage";
+import NewsPage from "./pages/newsPage/NewsPage";
+import ProfilePage from "./pages/profilePages/ProfilePage";
 
 
 const App:React.FC = () => {

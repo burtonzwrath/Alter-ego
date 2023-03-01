@@ -15,10 +15,10 @@ const styles = makeStyles({
     justifyContent: "space-between",
     zIndex: 10,
     width: "100%",
-    minHeight:"50px",
-    position:"fixed",
-    top:"0",
-    maxWidth:"1400px"
+    minHeight: "50px",
+    position: "fixed",
+    top: "0",
+    maxWidth: "1400px",
   },
   buttonsWrapper: {
     flexGrow: 1,

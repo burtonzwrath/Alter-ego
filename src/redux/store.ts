@@ -1,4 +1,4 @@
-import { configureStore} from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import newsSlice from "./news/newsSlice";
 export const store = configureStore({
   reducer: {
@@ -6,4 +6,3 @@ export const store = configureStore({
   },
 });
 export type AppDispatch = typeof store.dispatch;
-

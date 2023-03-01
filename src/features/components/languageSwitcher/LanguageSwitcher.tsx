@@ -1,37 +1,10 @@
 import * as React from "react";
 import { useState } from "react";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Stack";
 import i18n from "i18next";
-import { styled } from "@mui/material/styles";
+import {ButtonEngLang} from "./buttonsLanguage/buttonEngLang";
+import {ButtonUkrLang} from "./buttonsLanguage/buttonUkrLang";
 
-const ButtonUkrLang = styled(Button)({
-  width: "3px",
-  height: "20px",
-  transition: "1s",
-  color: "lightgoldenrodyellow",
-  "&:focus": {
-    backgroundColor: "gray",
-  },
-  "&:hover": {
-    color: "burlywood",
-    backgroundColor: "gray",
-  },
-}) as typeof Button;
-
-const ButtonEngLang = styled(Button)({
-  width: "3px",
-  height: "20px",
-  color: "lightsteelblue",
-  transition: "1s",
-  "&:focus": {
-    backgroundColor: "gray",
-  },
-  "&:hover": {
-    color: "burlywood",
-    backgroundColor: "gray",
-  },
-}) as typeof Button;
 
 const LanguageSwitcher = () => {
   const [langEn, setLangEn] = useState(false);

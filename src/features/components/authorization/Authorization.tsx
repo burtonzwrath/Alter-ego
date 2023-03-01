@@ -5,48 +5,12 @@ import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { setLogin } from "../../../redux/news/newsSlice";
 import { Box, Modal, Typography, Slide } from "@mui/material";
-import { makeStyles } from "@mui/styles";
 import LoginIcon from "@mui/icons-material/Login";
-import {getLocalStorageItem, setLocalStorageItem} from "../../../helpers/locatStorage";
-
-const styles = makeStyles({
-  modal: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: 280,
-    backgroundColor: "black",
-    border: "2px solid #000",
-    padding: 35,
-    borderRadius: 10,
-
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    position: "absolute",
-    top: "60px",
-    right: "1px",
-  },
-  buttonWrapper: {
-    display: "flex",
-    position: "relative",
-    cursor: "pointer",
-    alignItems: "center",
-
-  },
-  buttonHide: {
-    width: 120,
-    height: 22,
-    display: "flex",
-    color: "lightsteelblue",
-    justifyContent: "center",
-    "&:hover": {
-      color: "burlywood",
-    },
-  },
-});
+import {authorizationStyles} from "./authorizationStyles";
+import {
+  getLocalStorageItem,
+  setLocalStorageItem,
+} from "../../../helpers/locatStorage";
 
 const Authorization = () => {
   const [userName, setUserName] = useState<string>("");
@@ -58,12 +22,12 @@ const Authorization = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
-  const s = styles();
+  const s = authorizationStyles();
 
   useEffect(() => {
     if (localStorage.length !== 0) {
-     const access = getLocalStorageItem()
-        dispatch(setLogin(access.isLogged));
+      const access = getLocalStorageItem();
+      dispatch(setLogin(access.isLogged));
     }
   }, []);
 

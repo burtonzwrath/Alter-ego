@@ -24,7 +24,7 @@ const ButtonNews: React.FC = () => {
   return (
     <NewsButton onClick={() => navigate("/news")}>
       {t("news")}
-      <NewspaperIcon sx={{alignSelf:"flex-start"}}/>
+      <NewspaperIcon sx={{ alignSelf: "flex-start" }} />
     </NewsButton>
   );
 };

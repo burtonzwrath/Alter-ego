@@ -4,8 +4,8 @@
 // import {LinearProgress} from "@mui/material";
 //
 //
-// const HomePage = lazy(() =>
-//     import('../pages/HomePage' ),
+// const homePage = lazy(() =>
+//     import('../pages/homePage' ),
 // );
 // const NewsPage = lazy(() =>
 //     import('../pages/NewsPage'),
@@ -20,7 +20,7 @@
 //         <Suspense fallback={<LinearProgress />}>
 //             <Routes>
 //                 <Route path="/" element={<SharedLayout />}>
-//                     <Route index element={HomePage} />
+//                     <Route index element={homePage} />
 //                     <Route path="/news" element={NewsPage} />
 //                     <Route path="/profile" element={ProfilePage} />
 //                 </Route>

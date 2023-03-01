@@ -15,7 +15,7 @@ const styles = makeStyles({
     maxWidth: "1400px",
     alignItems: "center",
     minHeight: "800px",
-    margin: "40px",
+    margin: "60px",
   },
 });
 

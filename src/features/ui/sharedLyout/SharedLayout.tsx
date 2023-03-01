@@ -11,9 +11,9 @@ const styles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    minHeight:"800px",
-    maxWidth:"1400px",
-    margin:"0 auto"
+    minHeight: "800px",
+    maxWidth: "1400px",
+    margin: "0 auto",
   },
 });
 
