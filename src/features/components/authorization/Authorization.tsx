@@ -17,9 +17,9 @@ const Authorization = () => {
   const [password, setPassword] = useState<string>("");
   const [hideForm, setHideForm] = useState<boolean>(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { t, i18n } = useTranslation();
   const s = authorizationStyles();
@@ -66,7 +66,6 @@ const Authorization = () => {
           />
         </Box>
       </Slide>
-
       <Modal
         open={open}
         onClose={handleClose}

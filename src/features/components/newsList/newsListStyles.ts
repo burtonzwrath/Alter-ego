@@ -2,6 +2,8 @@ import { makeStyles } from "@mui/styles";
 
 export const newsListStyles = makeStyles({
   list: {
+    padding:"0 30px",
+    overflowX: "hidden",
     listStyle: "none",
     display: "flex",
     flexDirection: "column",

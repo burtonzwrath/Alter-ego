@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/downloadButton/ButtonDownload.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListStyles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,7 @@
       <workItem from="1677649412710" duration="15943000" />
       <workItem from="1677666212646" duration="2859000" />
       <workItem from="1677669096778" duration="942000" />
-      <workItem from="1677670051099" duration="18028000" />
+      <workItem from="1677670051099" duration="21894000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -161,7 +162,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677690751541</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="newsList">
+      <created>1677691059205</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677691059205</updated>
+    </task>
+    <task id="LOCAL-00015" summary="newsList">
+      <created>1677691090884</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1677691090884</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +194,7 @@
     <MESSAGE value="sticky navbar" />
     <MESSAGE value="media query" />
     <MESSAGE value="media query 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="media query 2" />
+    <MESSAGE value="newsList" />
+    <option name="LAST_COMMIT_MESSAGE" value="newsList" />
   </component>
 </project>
