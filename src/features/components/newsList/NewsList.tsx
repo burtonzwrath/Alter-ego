@@ -1,11 +1,11 @@
-import NewsListItem  from "./newsListItem/NewsListItem";
-import { Box, Typography } from "@mui/material";
 import React from "react";
+import NewsListItem  from "./newsListItem/NewsListItem";
 import { newListTypes } from "./newsListTypes";
+import { getIsLoading } from "../../../redux/news/selectors/selectors";
 import ButtonDownload from "../downloadButton/ButtonDownload";
 import { useTranslation } from "react-i18next";
+import { Box, Typography } from "@mui/material";
 import { newsListStyles } from "./newsListStyles";
-import { getIsLoading } from "../../../redux/news/selectors/selectors";
 import { useSelector } from "react-redux";
 
  const NewsList: React.FC<newListTypes> = ({ news }) => {

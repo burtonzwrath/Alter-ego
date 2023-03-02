@@ -17,12 +17,13 @@ const Authorization = () => {
   const [password, setPassword] = useState<string>("");
   const [hideForm, setHideForm] = useState<boolean>(false);
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
+  const s = authorizationStyles();
   const navigate = useNavigate();
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const dispatch = useDispatch();
-  const { t } = useTranslation();
-  const s = authorizationStyles();
+
 
   useEffect(() => {
     if (localStorage.length !== 0) {

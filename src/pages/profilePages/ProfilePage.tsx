@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { useNavigate } from "react-router";
 import { getLocalStorageItem } from "../../helpers/locatStorage";
 import { useTranslation } from "react-i18next";
+import { getNews } from "../../redux/news/selectors/selectors";
+import profile from "../../assets/image/profilePage/profile.png";
 import Box from "@mui/material/Stack";
 import { Typography } from "@mui/material";
-import profile from "../../assets/image/profilePage/profile.png";
 import { profilePageStyles } from "./profilePageStyles";
 import { setFlag } from "../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { getNews } from "../../redux/news/selectors/selectors";
 
 const ProfilePage = () => {
   const navigate = useNavigate();

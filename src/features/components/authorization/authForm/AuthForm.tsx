@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SignInButton from "../../../ui/buttons/SignInButton";
 import {
   Grid,
   Box,
@@ -9,9 +10,8 @@ import {
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { AuthFormTypes } from "../authorizationTypes";
-import SignInButton from "../../../ui/buttons/SignInButton";
 import { authFormStyles } from "./authFormStyles";
+import { AuthFormTypes } from "../authorizationTypes";
 
 const AuthForm: React.FC<AuthFormTypes> = ({
   setPassword,

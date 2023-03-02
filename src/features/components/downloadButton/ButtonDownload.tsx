@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useRef } from "react";
+import { getNews } from "../../../redux/news/selectors/selectors";
+import { useTranslation } from "react-i18next";
 import { Box, Button, Slide } from "@mui/material";
 import { increment, setFlag } from "../../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { getNews } from "../../../redux/news/selectors/selectors";
-import { useTranslation } from "react-i18next";
 import { buttonDownloadStyles } from "./buttonDownloadStyles";
 
 const ButtonDownload: React.FC = () => {

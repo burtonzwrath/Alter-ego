@@ -5,7 +5,6 @@ import i18n from "i18next";
 import {ButtonEngLang} from "./buttonsLanguage/buttonEngLang";
 import {ButtonUkrLang} from "./buttonsLanguage/buttonUkrLang";
 
-
 const LanguageSwitcher = () => {
   const [langEn, setLangEn] = useState(false);
   const [langUkr, setLangUkr] = useState(true);

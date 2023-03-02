@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
+import ukraine from "../../assets/image/homePage/Ukraine.jpg";
+import { useTranslation } from "react-i18next";
+import { getNews } from "../../redux/news/selectors/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { setFlag } from "../../redux/news/newsSlice";
 import { Box, Typography } from "@mui/material";
-import { getNews } from "../../redux/news/selectors/selectors";
-import ukraine from "../../assets/image/homePage/Ukraine.jpg";
-import { useTranslation } from "react-i18next";
 import { HomePagestyles } from "./homePageStyles";
 
 const HomePage = () => {

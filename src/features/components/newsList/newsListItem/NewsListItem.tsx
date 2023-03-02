@@ -1,11 +1,11 @@
 import React, { useCallback, useState } from "react";
+import { AppDispatch } from "../../../../redux/store";
+import { newListItemTypes } from "./newListTypes";
 import { Box, ListItemText, Slide } from "@mui/material";
 import DeleteSweepOutlinedIcon from "@mui/icons-material/DeleteSweepOutlined";
-import { newListItemTypes } from "./newListTypes";
 import { newListItemStyles } from "./newListStyles";
 import { deleteNews } from "../../../../redux/news/newsSlice";
 import { useDispatch } from "react-redux";
-import { AppDispatch } from "../../../../redux/store";
 
  const  NewsListItem: React.FC<newListItemTypes> = ({ item }) => {
   const [slide, setSlide] = useState(true);

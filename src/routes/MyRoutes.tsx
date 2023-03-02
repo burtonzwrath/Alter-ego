@@ -1,11 +1,11 @@
 import React, { Suspense, lazy } from "react";
+const News = lazy(() => import("../pages/newsPage/NewsPage"));
+const Home = lazy(() => import("../pages/homePage/HomePage"));
+const Profile = lazy(() => import("../pages/profilePages/ProfilePage"));
+const Layout = lazy(() => import("../features/ui/sharedLayout/SharedLayout"));
 import { Routes, Route } from "react-router-dom";
 import ProgressBar from "../features/ui/progressBar/ProgressBar";
 import path from "./paths";
-const Home = lazy(() => import("../pages/homePage/HomePage"));
-const News = lazy(() => import("../pages/newsPage/NewsPage"));
-const Profile = lazy(() => import("../pages/profilePages/ProfilePage"));
-const Layout = lazy(() => import("../features/ui/sharedLayout/SharedLayout"));
 
 
 const MyRoutes = () => (
