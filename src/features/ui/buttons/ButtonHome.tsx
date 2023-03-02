@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import {Button, useMediaQuery} from "@mui/material";
+import {Button} from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import { styled } from "@mui/material/styles";
 import {useTranslation} from "react-i18next";

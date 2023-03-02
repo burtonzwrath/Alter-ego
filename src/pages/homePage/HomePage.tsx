@@ -5,7 +5,7 @@ import { Box, Typography } from "@mui/material";
 import { getNews } from "../../redux/news/selectors/selectors";
 import ukraine from "../../assets/image/homePage/Ukraine.jpg";
 import { useTranslation } from "react-i18next";
-import {HomePagestyles} from "./homePageStyles";
+import { HomePagestyles } from "./homePageStyles";
 
 const HomePage = () => {
   const news = useSelector(getNews);
@@ -17,29 +17,35 @@ const HomePage = () => {
     if (news.length !== 0) {
       dispatch(setFlag(true));
     }
-  }, [dispatch]);
+  }, [dispatch,news.length]);
 
   return (
     <Box className={s.homeWrapper}>
       <Box className={s.typographyWrapper}>
-        <Typography sx={{
-          fontSize: {
-            lg: 80,
-            md: 60,
-            sm: 30,
-            xs: 30
-          }
-        }} color="darkBlue">
+        <Typography
+          sx={{
+            fontSize: {
+              lg: 80,
+              md: 60,
+              sm: 30,
+              xs: 30,
+            },
+          }}
+          color="darkBlue"
+        >
           {t("ukraine")}
         </Typography>
-        <Typography  sx={{
-          fontSize: {
-            lg: 80,
-            md: 60,
-            sm: 30,
-            xs: 30
-          }
-        }} color="yellow">
+        <Typography
+          sx={{
+            fontSize: {
+              lg: 80,
+              md: 60,
+              sm: 30,
+              xs: 30,
+            },
+          }}
+          color="yellow"
+        >
           {t("isHome")}
         </Typography>
       </Box>

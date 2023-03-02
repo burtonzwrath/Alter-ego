@@ -26,7 +26,7 @@ const ButtonDownload: React.FC = () => {
   const showMore = useCallback(() => {
     dispatch(increment());
     dispatch(setFlag(false));
-  }, [increment, setFlag, dispatch]);
+  }, [dispatch]);
 
   return (
     <Slide in={true} timeout={1000} direction="right">
@@ -43,4 +43,4 @@ const ButtonDownload: React.FC = () => {
   );
 };
 
-export default React.memo(ButtonDownload);
+export default ButtonDownload;

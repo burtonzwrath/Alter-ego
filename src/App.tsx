@@ -1,16 +1,16 @@
 import React from "react";
-import "./App.css";
 import { Provider } from "react-redux";
-import { store } from "./redux/store";
+import MyRoutes from "./routes/MyRoutes";
 import { ThemeProvider } from "@mui/material/styles";
-import {theme} from "./appStyles";
-import MyRoutes from "./Routes/MyRoutes";
+import { store } from "./redux/store";
+import { theme } from "./appStyles";
+import "./App.css";
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <MyRoutes/>
+        <MyRoutes />
       </Provider>
     </ThemeProvider>
   );

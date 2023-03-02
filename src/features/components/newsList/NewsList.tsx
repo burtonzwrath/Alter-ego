@@ -12,6 +12,7 @@ export const NewsList: React.FC<newListTypes> = ({ news }) => {
   const s = newsListStyles();
   const { t } = useTranslation();
   const isLoading = useSelector(getIsLoading);
+  console.log(news)
 
   return (
     <Box className={s.list}>
@@ -20,9 +21,7 @@ export const NewsList: React.FC<newListTypes> = ({ news }) => {
         <NewsListItem key={item.id} item={item} />
       ))}
       {isLoading ? <Typography>Loading...</Typography> : ""}
-      {news.length!==0 ? <ButtonDownload />:""}
+      {news.length !== 0 ? <ButtonDownload /> : ""}
     </Box>
   );
 };
-
-

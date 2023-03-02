@@ -5,7 +5,6 @@ import { newsSliceTypes } from "./selectors/newsSliceTypes";
 const initialState: newsSliceTypes = {
   currentPage: 1,
   news: [],
-  isLogged: false,
   isLoading: null,
   status: null,
   error: null,
@@ -20,10 +19,9 @@ const newsSlice = createSlice({
       state.currentPage += 1;
     },
     deleteNews(state, action) {
-      state.news = [...state.news.filter((item) => item.id !== action.payload)];
-    },
-    setLogin(state, action) {
-      state.isLogged = action.payload;
+      state.news = [
+        ...state.news.flat().filter((item) => item.id !== action.payload),
+      ];
     },
     setFlag(state, action) {
       state.flag = action.payload;
@@ -50,6 +48,5 @@ const newsSlice = createSlice({
     });
   },
 });
-export const { increment, setLogin, setFlag, deleteNews, setLoading } =
-  newsSlice.actions;
+export const { increment, setFlag, deleteNews, setLoading } = newsSlice.actions;
 export default newsSlice.reducer;

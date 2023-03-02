@@ -15,7 +15,7 @@ const ProfilePage = () => {
 
   useEffect(() => {
     if (!isLogged) navigate("/home");
-  }, [isLogged]);
+  }, [isLogged, navigate]);
 
   return (
     <Box className={s.profileWrapper}>

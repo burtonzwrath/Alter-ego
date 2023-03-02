@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import {Grid, Box, TextField, Button, InputAdornment, Typography} from "@mui/material";
+import {
+  Grid,
+  Box,
+  TextField,
+  InputAdornment,
+  Typography,
+} from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { AuthFormTypes } from "../authorizationTypes";
 import SignInButton from "../../../ui/buttons/SignInButton";
-import {authFormStyles} from "./authFormStyles";
+import { authFormStyles } from "./authFormStyles";
 
 const AuthForm: React.FC<AuthFormTypes> = ({
   setPassword,
@@ -14,7 +20,6 @@ const AuthForm: React.FC<AuthFormTypes> = ({
   password,
   setHideForm,
 }) => {
-
   const [visible, setVisible] = useState(false);
   const s = authFormStyles();
   const handleCloseForm = (): void => {
@@ -23,7 +28,7 @@ const AuthForm: React.FC<AuthFormTypes> = ({
 
   return (
     <Grid>
-      <Box className={s.paper} >
+      <Box className={s.paper}>
         <LogoutIcon className={s.logOutIcon} onClick={handleCloseForm} />
         <Grid className={s.authTitle}>
           <Typography variant="h6">Authorization</Typography>
@@ -54,9 +59,8 @@ const AuthForm: React.FC<AuthFormTypes> = ({
               >
                 {visible ? <VisibilityIcon /> : <VisibilityOffIcon />}
               </InputAdornment>
-            )
+            ),
           }}
-
         />
         <SignInButton />
       </Box>

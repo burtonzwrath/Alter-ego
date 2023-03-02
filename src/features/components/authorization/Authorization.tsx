@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import AuthForm from "./authForm/AuthForm";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
-import { setLogin } from "../../../redux/news/newsSlice";
+import { setLogin } from "../../../redux/auth/authSlice";
 import { Box, Modal, Typography, Slide, Button } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
 import { authorizationStyles } from "./authorizationStyles";
@@ -21,7 +21,7 @@ const Authorization = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const dispatch = useDispatch();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const s = authorizationStyles();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Authorization = () => {
       const access = getLocalStorageItem();
       dispatch(setLogin(access.isLogged));
     }
-  }, []);
+  }, [dispatch]);
 
   const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
