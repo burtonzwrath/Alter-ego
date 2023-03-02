@@ -10,7 +10,6 @@ import { useSelector } from "react-redux";
 
 
 export const NewsList: React.FC<newListTypes> = ({ news }) => {
-  console.log(news)
   const s = newsListStyles();
   const { t } = useTranslation();
   const isLoading = useSelector(getIsLoading);
