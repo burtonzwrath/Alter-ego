@@ -8,6 +8,7 @@ export const ButtonUkrLang = styled(Button)({
     color: "lightgoldenrodyellow",
     "&:focus": {
         backgroundColor: "gray",
+        color:"orange"
     },
     "&:hover": {
         color: "burlywood",

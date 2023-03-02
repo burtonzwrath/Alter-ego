@@ -9,15 +9,15 @@ const ProfileButton = styled(Button)({
   "&:hover": {
     color: "burlywood",
   },
+  "&:focus":{
+    color:"orange"
+  },
   color: "lightgoldenrodyellow",
   display: "flex",
   justifyContent: "flex-end",
   height: "45px",
   alignItems: "flex-end",
-  minWidth:"0",
-  "@media (min-width: 550px)": {
-    minWidth:"120px",
-  }
+  minWidth:"120",
 }) as typeof Button;
 
 const ButtonProfile: React.FC = () => {

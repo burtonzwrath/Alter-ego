@@ -4,7 +4,7 @@ import AuthForm from "./authForm/AuthForm";
 import { useTranslation } from "react-i18next";
 import { useDispatch } from "react-redux";
 import { setLogin } from "../../../redux/news/newsSlice";
-import { Box, Modal, Typography, Slide } from "@mui/material";
+import { Box, Modal, Typography, Slide, Button } from "@mui/material";
 import LoginIcon from "@mui/icons-material/Login";
 import {authorizationStyles} from "./authorizationStyles";
 import {
@@ -44,12 +44,12 @@ const Authorization = () => {
 
   return (
     <Box className={s.buttonWrapper} role="button">
-      <Box
+      <Button 
         className={s.buttonHide}
         onClick={() => setHideForm((prev) => !prev)}
       >
         <LoginIcon /> {t("login")}
-      </Box>
+      </Button>
       <Slide in={hideForm} timeout={1000} direction="down">
         <Box
           className={s.form}

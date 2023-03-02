@@ -9,15 +9,16 @@ const HomeButton = styled(Button)({
   "&:hover": {
     color: "burlywood",
   },
+   "&:focus":{
+    color:"orange"
+  },
   color: "lightgoldenrodyellow",
   display: "flex",
   justifyContent:"flex-end",
   alignItems:"flex-end",
   height:"45px",
-  minWidth:"0",
-  "@media (min-width: 550px)": {
-    minWidth:"120px",
-  }
+  minWidth:"120px",
+ 
 }) as typeof Button;
 
 const ButtonHome: React.FC = () => {

@@ -18,24 +18,25 @@ export const authorizationStyles = makeStyles({
         position: "absolute",
         top: "60px",
         right: "1px",
+        zIndex:"100"
     },
     buttonWrapper: {
         display: "flex",
         position: "relative",
         cursor: "pointer",
         alignItems: "center",
+        justifyContent: "flex-end",
+        minWidth:"120px"
     },
     buttonHide: {
-        height: 22,
         display: "flex",
-        color: "lightsteelblue",
-        justifyContent: "center",
+        minWidth:"120px",
         "&:hover": {
             color: "burlywood",
         },
-        minWidth:"0",
-        "@media (min-width: 550px)": {
-            minWidth:"120px",
-        }
+        "&:focus":{
+            color:"orange"
+          },
+
     },
 });

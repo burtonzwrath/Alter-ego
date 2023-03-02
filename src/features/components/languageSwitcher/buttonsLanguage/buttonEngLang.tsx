@@ -8,6 +8,7 @@ export const ButtonEngLang = styled(Button)({
     transition: "1s",
     "&:focus": {
         backgroundColor: "gray",
+        color:"orange"
     },
     "&:hover": {
         color: "burlywood",

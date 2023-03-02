@@ -9,7 +9,9 @@ const SignInButton = styled(Button)({
     "&:hover": {
         color: "burlywood",
         backgroundColor:"black"
-    },
+    },  "&:focus":{
+        color:"orange"
+      },
 }) as typeof Button;
 
 const ButtonProfile: React.FC = () => {

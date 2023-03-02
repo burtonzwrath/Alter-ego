@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import { newsListStyles } from "./newsListStyles";
 import { getIsLoading } from "../../../redux/news/selectors/selectors";
 import { useSelector } from "react-redux";
-import image from '../../../assets/image/newsPage/news.jpg'
+
 
 export const NewsList: React.FC<newListTypes> = ({ news }) => {
   console.log(news)
@@ -26,9 +26,4 @@ export const NewsList: React.FC<newListTypes> = ({ news }) => {
   );
 };
 
-<Card >
-  <CardMedia
-    image={image}
-    title="Contemplative Reptile"
-  />
-</Card>
+

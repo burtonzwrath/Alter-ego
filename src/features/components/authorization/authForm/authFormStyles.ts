@@ -23,6 +23,12 @@ export const authFormStyles = makeStyles({
         position: "absolute",
         right: "5px",
         borderRadius: "50%",
+        "&:hover": {
+            color: "burlywood",
+          }, 
+          "&:focus": {
+            color: "orange",
+          },
     },
     authTitle:{
         display:"flex",

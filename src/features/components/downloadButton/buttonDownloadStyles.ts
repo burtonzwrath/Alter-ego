@@ -5,7 +5,7 @@ export const buttonDownloadStyles = makeStyles({
         display: "flex",
         justifyContent: "center",
         backgroundColor: "black",
-        zIndex: "12",
+        zIndex: "1",
         width: "160px",
         borderRadius: "5px",
         "&:hover": {
