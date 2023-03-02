@@ -2,26 +2,18 @@ import React from "react";
 import "./App.css";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
-import {Route,Routes} from "react-router-dom";
-import SharedLayout from "./features/ui/sharedLyout/SharedLayout";
-import HomePage from "./pages/homePage/HomePage";
-import NewsPage from "./pages/newsPage/NewsPage";
-import ProfilePage from "./pages/profilePages/ProfilePage";
+import { ThemeProvider } from "@mui/material/styles";
+import {theme} from "./appStyles";
+import MyRoutes from "./Routes/MyRoutes";
 
-
-const App:React.FC = () => {
+const App: React.FC = () => {
   return (
+    <ThemeProvider theme={theme}>
       <Provider store={store}>
-              <Routes>
-                  <Route path="/" element={<SharedLayout />}>
-                      <Route path ="/home" element={<HomePage />}/>
-                      <Route path="/profile" element={<ProfilePage/>} />
-                      <Route path="*" element={<NewsPage/>} />
-                      <Route index  element={<NewsPage/>} />
-                  </Route>
-              </Routes>
+        <MyRoutes/>
       </Provider>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;

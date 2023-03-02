@@ -7,17 +7,17 @@ import { useTranslation } from "react-i18next";
 const NewsButton = styled(Button)({
   my: 2,
   "&:hover": {
-    color: "burlywood",
+    color: "secondary",
   },
-  "&:focus":{
-    color:"orange"
+  "&:focus": {
+    color: "orange",
   },
-  color: "lightgoldenrodyellow",
+  color: "primary",
   display: "flex",
-  justifyContent:"flex-end",
-  height:"45px",
-  alignItems:"flex-end",
-  minWidth:"120px",
+  justifyContent: "flex-end",
+  height: "45px",
+  alignItems: "flex-end",
+  minWidth: "120px",
 }) as typeof Button;
 
 const ButtonNews: React.FC = () => {

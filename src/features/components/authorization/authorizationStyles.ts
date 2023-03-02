@@ -32,7 +32,7 @@ export const authorizationStyles = makeStyles({
         display: "flex",
         minWidth:"120px",
         "&:hover": {
-            color: "burlywood",
+            color: "secondary",
         },
         "&:focus":{
             color:"orange"

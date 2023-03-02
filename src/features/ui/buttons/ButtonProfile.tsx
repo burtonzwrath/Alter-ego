@@ -7,12 +7,12 @@ import { useTranslation } from "react-i18next";
 const ProfileButton = styled(Button)({
   my: 2,
   "&:hover": {
-    color: "burlywood",
+    color: "secondary",
   },
   "&:focus":{
     color:"orange"
   },
-  color: "lightgoldenrodyellow",
+  color: "primary",
   display: "flex",
   justifyContent: "flex-end",
   height: "45px",
