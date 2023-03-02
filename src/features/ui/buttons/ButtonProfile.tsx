@@ -17,7 +17,7 @@ const ProfileButton = styled(Button)({
   justifyContent: "flex-end",
   height: "45px",
   alignItems: "flex-end",
-  minWidth:"120",
+  minWidth:"120px",
 }) as typeof Button;
 
 const ButtonProfile: React.FC = () => {
