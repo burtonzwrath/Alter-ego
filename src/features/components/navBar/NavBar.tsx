@@ -6,7 +6,7 @@ import ButtonNews from "../../ui/buttons/ButtonNews";
 import ButtonProfile from "../../ui/buttons/ButtonProfile";
 import Box from "@mui/material/Box";
 import { useSelector } from "react-redux";
-import {navBarStyles} from "./navBarStyles";
+import { navBarStyles } from "./navBarStyles";
 import React from "react";
 
 const NavBar = () => {
@@ -24,4 +24,4 @@ const NavBar = () => {
     </Box>
   );
 };
-export default React.memo(NavBar) ;
+export default React.memo(NavBar);

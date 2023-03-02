@@ -12,7 +12,8 @@ export const authFormStyles = makeStyles({
         borderColor: "purple",
         boxShadow: "3px 3px 3px 3px black",
         color: "black",
-        backgroundColor: "lightgoldenrodyellow",
+        backgroundColor: "lightgray",
+
     },
     signInButton: {
         margin: "8px 0",

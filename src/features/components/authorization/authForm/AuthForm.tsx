@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, Box, TextField, Button, InputAdornment } from "@mui/material";
+import {Grid, Box, TextField, Button, InputAdornment, Typography} from "@mui/material";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import LogoutIcon from "@mui/icons-material/Logout";
@@ -14,9 +14,9 @@ const AuthForm: React.FC<AuthFormTypes> = ({
   password,
   setHideForm,
 }) => {
+
   const [visible, setVisible] = useState(false);
   const s = authFormStyles();
-
   const handleCloseForm = (): void => {
     setHideForm((prevState: boolean) => !prevState);
   };
@@ -26,7 +26,7 @@ const AuthForm: React.FC<AuthFormTypes> = ({
       <Box className={s.paper} >
         <LogoutIcon className={s.logOutIcon} onClick={handleCloseForm} />
         <Grid className={s.authTitle}>
-          <h3>Authorization</h3>
+          <Typography variant="h6">Authorization</Typography>
         </Grid>
         <TextField
           size="small"

@@ -5,8 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/getNews.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/getNews.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/Authorization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/AuthForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authForm/authFormStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authForm/authFormStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newsPage/NewsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/news/newsSlice.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/newsSlice.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/news/operations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/news/operations.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677776060532</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="condition to download button">
+      <created>1677786423347</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677786423347</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +250,7 @@
     <MESSAGE value="password fix" />
     <MESSAGE value="isloading try catch" />
     <MESSAGE value="Routes + lazy loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Routes + lazy loading" />
+    <MESSAGE value="condition to download button" />
+    <option name="LAST_COMMIT_MESSAGE" value="condition to download button" />
   </component>
 </project>

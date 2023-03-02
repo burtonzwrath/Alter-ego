@@ -37,6 +37,5 @@ export const authorizationStyles = makeStyles({
         "&:focus":{
             color:"orange"
           },
-
     },
 });

@@ -29,28 +29,27 @@ const newsSlice = createSlice({
       state.flag = action.payload;
     },
     setLoading(state, action) {
-      state.isLoading = action.payload
-    }
+      state.isLoading = action.payload;
+    },
   },
-  extraReducers: builder => {
-    builder.addCase (fetchNews.pending,state => {
-      state.status = "pending"
-      state.isLoading = true
-    })
-    builder.addCase(fetchNews.fulfilled,(state, action)=>{
-      state.status = "resolved"
-      state.isLoading = false
-      state.news.push(action.payload)
-      state.error = ""
-    })
-    builder.addCase(fetchNews.rejected, (state, action)=>{
-
-      state.status = "rejected"
-      state.isLoading = false
-      state.error = action.error.message
-    })
+  extraReducers: (builder) => {
+    builder.addCase(fetchNews.pending, (state) => {
+      state.status = "pending";
+      state.isLoading = true;
+    });
+    builder.addCase(fetchNews.fulfilled, (state, action) => {
+      state.status = "resolved";
+      state.isLoading = false;
+      state.news.push(action.payload);
+      state.error = "";
+    });
+    builder.addCase(fetchNews.rejected, (state, action) => {
+      state.status = "rejected";
+      state.isLoading = false;
+      state.error = action.error.message;
+    });
   },
 });
-export const { increment, setLogin, setFlag, deleteNews, setLoading } = newsSlice.actions;
+export const { increment, setLogin, setFlag, deleteNews, setLoading } =
+  newsSlice.actions;
 export default newsSlice.reducer;
-
