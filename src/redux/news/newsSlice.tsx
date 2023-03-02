@@ -47,7 +47,6 @@ const newsSlice = createSlice({
       state.status = "rejected"
       state.isLoading = false
       state.error = action.error.message
-      state.news = []
     })
   },
 });
