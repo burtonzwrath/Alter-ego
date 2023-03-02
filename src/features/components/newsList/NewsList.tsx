@@ -19,7 +19,8 @@ export const NewsList: React.FC<newListTypes> = ({ news }) => {
       {news.flat().map((item) => (
         <NewsListItem key={item.id} item={item} />
       ))}
-      {isLoading ? <Typography>Loading...</Typography> : <ButtonDownload />}
+      {isLoading ? <Typography>Loading...</Typography> : ""}
+      {news.length!==0 ? <ButtonDownload />:""}
     </Box>
   );
 };
