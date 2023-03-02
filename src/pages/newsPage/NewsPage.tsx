@@ -23,9 +23,8 @@ const NewsPage = () => {
   useEffect(() => {
     if (!flag) {
       dispatch(fetchNews(currentPage));
-      dispatch(setLoading(false));
     }
-  }, [dispatch, currentPage, flag]);
+  }, [dispatch, currentPage]);
 
   return <NewsList news={news} />;
 };

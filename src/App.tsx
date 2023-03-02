@@ -15,9 +15,9 @@ const App:React.FC = () => {
               <Routes>
                   <Route path="/" element={<SharedLayout />}>
                       <Route path ="/home" element={<HomePage />}/>
-                      <Route index path="/news" element={<NewsPage/>} />
                       <Route path="/profile" element={<ProfilePage/>} />
                       <Route path="*" element={<NewsPage/>} />
+                      <Route index  element={<NewsPage/>} />
                   </Route>
               </Routes>
       </Provider>

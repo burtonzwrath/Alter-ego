@@ -38,7 +38,6 @@ const newsSlice = createSlice({
       state.isLoading = true
     })
     builder.addCase(fetchNews.fulfilled,(state, action)=>{
-      console.log(action.payload);
       state.status = "resolved"
       state.isLoading = false
       state.news.push(action.payload)
@@ -48,7 +47,7 @@ const newsSlice = createSlice({
       state.status = "rejected"
       state.isLoading = false
       state.error = action.error.message
-  
+      state.news = []
     })
   },
 });

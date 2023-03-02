@@ -4,7 +4,13 @@ import { getNewsFunction } from "../../api/getNews";
 export const fetchNews = createAsyncThunk(
   "news/fetchNews",
   async function (page: number) {
-    const response = await getNewsFunction(page);
-    return await response.json();
+    try{
+      const response = await getNewsFunction(page);
+      console.log(response);
+      return await response.json();
+    }
+  catch(e){
+    console.log(e)
+  }
   }
 );

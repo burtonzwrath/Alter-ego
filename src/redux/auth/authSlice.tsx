@@ -10,7 +10,6 @@ const authSlice = createSlice({
       state.isLogged = action.payload;
     },
   },
-
 });
 export const { setLogin} = authSlice.actions;
 export default authSlice.reducer;
