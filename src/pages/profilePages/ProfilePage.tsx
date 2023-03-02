@@ -6,16 +6,26 @@ import Box from "@mui/material/Stack";
 import { Typography } from "@mui/material";
 import profile from "../../assets/image/profilePage/profile.png";
 import { profilePageStyles } from "./profilePageStyles";
+import { setFlag } from "../../redux/news/newsSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { getNews } from "../../redux/news/selectors/selectors";
 
 const ProfilePage = () => {
   const navigate = useNavigate();
   const isLogged = getLocalStorageItem();
   const { t } = useTranslation();
   const s = profilePageStyles();
+  const news = useSelector(getNews);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!isLogged) navigate("/home");
-  }, [isLogged, navigate]);
+    if (!isLogged) {
+      navigate("/home");
+    }
+    if (news.length !== 0) {
+      dispatch(setFlag(true));
+    }
+  }, [isLogged, navigate, dispatch, news.length]);
 
   return (
     <Box className={s.profileWrapper}>

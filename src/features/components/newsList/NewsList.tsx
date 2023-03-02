@@ -1,4 +1,4 @@
-import { NewsListItem } from "./newsListItem/NewsListItem";
+import NewsListItem  from "./newsListItem/NewsListItem";
 import { Box, Typography } from "@mui/material";
 import React from "react";
 import { newListTypes } from "./newsListTypes";
@@ -8,11 +8,10 @@ import { newsListStyles } from "./newsListStyles";
 import { getIsLoading } from "../../../redux/news/selectors/selectors";
 import { useSelector } from "react-redux";
 
-export const NewsList: React.FC<newListTypes> = ({ news }) => {
+ const NewsList: React.FC<newListTypes> = ({ news }) => {
   const s = newsListStyles();
   const { t } = useTranslation();
   const isLoading = useSelector(getIsLoading);
-  console.log(news)
 
   return (
     <Box className={s.list}>
@@ -25,3 +24,4 @@ export const NewsList: React.FC<newListTypes> = ({ news }) => {
     </Box>
   );
 };
+ export default React.memo(NewsList)

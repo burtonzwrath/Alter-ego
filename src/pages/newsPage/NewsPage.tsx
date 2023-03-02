@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { NewsList } from "../../features/components/newsList/NewsList";
+import NewsList  from "../../features/components/newsList/NewsList";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNews } from "../../redux/news/operations";
 import { AppDispatch } from "../../redux/store";
@@ -24,4 +24,4 @@ const NewsPage = () => {
   return <NewsList news={news} />;
 };
 
-export default NewsPage;
+export default  NewsPage;

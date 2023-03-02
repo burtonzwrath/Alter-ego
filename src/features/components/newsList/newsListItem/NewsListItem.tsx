@@ -7,7 +7,7 @@ import { deleteNews } from "../../../../redux/news/newsSlice";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../../redux/store";
 
-export const NewsListItem: React.FC<newListItemTypes> = ({ item }) => {
+ const  NewsListItem: React.FC<newListItemTypes> = ({ item }) => {
   const [slide, setSlide] = useState(true);
   const s = newListItemStyles();
   const dispatch = useDispatch<AppDispatch>();
@@ -37,3 +37,5 @@ export const NewsListItem: React.FC<newListItemTypes> = ({ item }) => {
     </Slide>
   );
 };
+
+ export default React.memo(NewsListItem)
