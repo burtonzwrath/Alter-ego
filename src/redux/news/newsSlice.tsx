@@ -44,6 +44,7 @@ const newsSlice = createSlice({
       state.error = ""
     })
     builder.addCase(fetchNews.rejected, (state, action)=>{
+
       state.status = "rejected"
       state.isLoading = false
       state.error = action.error.message

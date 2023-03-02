@@ -3,14 +3,16 @@ import { getNewsFunction } from "../../api/getNews";
 
 export const fetchNews = createAsyncThunk(
   "news/fetchNews",
-  async function (page: number) {
+  async function (page: number, {rejectWithValue}) {
     try{
-      const response = await getNewsFunction(page);
-      console.log(response);
-      return await response.json();
+      const {data} = await getNewsFunction(page);
+      return await data;
     }
-  catch(e){
-    console.log(e)
-  }
+    catch (error:any) {
+        if (!error.response) {
+            throw error;
+        }
+        return rejectWithValue(error.response.data);
+    }
   }
 );

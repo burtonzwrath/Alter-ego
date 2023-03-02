@@ -7,7 +7,6 @@ import { AuthFormTypes } from "../authorizationTypes";
 import SignInButton from "../../../ui/buttons/SignInButton";
 import {authFormStyles} from "./authFormStyles";
 
-
 const AuthForm: React.FC<AuthFormTypes> = ({
   setPassword,
   setUserName,

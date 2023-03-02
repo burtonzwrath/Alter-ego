@@ -1,6 +1,6 @@
+import axios from "axios";
 
-export const getNewsFunction = (page: number) =>{
-      return  fetch(`https://jsonplaceholder.typicode.com/pots?_page=${page}&_limit=5`);
+export const getNewsFunction = (page: number) => {
+      return axios.get(`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=5`);
 }
-
 
