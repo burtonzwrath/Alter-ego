@@ -1,34 +1,23 @@
-import { useNavigate } from "react-router";
-import { Button } from "@mui/material";
+import {NavLink} from "react-router-dom";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
-import { styled } from "@mui/material/styles";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import {useTranslation} from "react-i18next";
+import {isActiveStyle, notActive} from "./buttonsStyle";
 
-const ProfileButton = styled(Button)({
-  my: 2,
-  "&:hover": {
-    color: "secondary",
-  },
-  "&:focus":{
-    color:"orange"
-  },
-  color: "primary",
-  display: "flex",
-  justifyContent: "flex-end",
-  height: "45px",
-  alignItems: "flex-end",
-  minWidth:"120px",
-}) as typeof Button;
 
-const ButtonProfile: React.FC = () => {
-  const navigate = useNavigate();
+export const ButtonProfile: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <ProfileButton onClick={() => navigate("/profile")}>
-      {t("profile")}
-      <AccountBoxIcon sx={{ alignSelf: "flex-start" }} />
-    </ProfileButton>
-  );
+      <NavLink
+          style={({ isActive }) =>
+              isActive ? isActiveStyle : notActive
+          }
+          to="/profile"
+      >
+        {t("profile")}
+        <AccountBoxIcon />
+      </NavLink>
+  )
 };
 export default ButtonProfile;

@@ -15,7 +15,8 @@ export const navBarStyles = makeStyles({
     buttonsWrapper: {
         display: "flex",
         flexDirection:"column",
-        padding:"9px"
+        padding:"15px",
+        gap:"10px"
     },
     buttonProfile: {
         my: 2,

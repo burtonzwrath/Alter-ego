@@ -31,11 +31,12 @@ export const authorizationStyles = makeStyles({
     buttonHide: {
         display: "flex",
         minWidth:"120px",
+        color:"gray",
         "&:hover": {
             color: "secondary",
         },
         "&:focus":{
-            color:"orange"
+            color:"lightsteelblue"
           },
     },
 });
