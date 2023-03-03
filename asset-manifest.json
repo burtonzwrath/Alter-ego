@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/Alter-ego/static/css/main.1ef3a49a.css",
-    "main.js": "/Alter-ego/static/js/main.82b0ae18.js",
-    "static/js/924.e3321560.chunk.js": "/Alter-ego/static/js/924.e3321560.chunk.js",
+    "main.js": "/Alter-ego/static/js/main.9a5d71f6.js",
+    "static/js/195.e19d6a70.chunk.js": "/Alter-ego/static/js/195.e19d6a70.chunk.js",
     "static/js/545.0356f83b.chunk.js": "/Alter-ego/static/js/545.0356f83b.chunk.js",
-    "static/js/406.9b4aa8fd.chunk.js": "/Alter-ego/static/js/406.9b4aa8fd.chunk.js",
-    "static/js/509.ed6733f8.chunk.js": "/Alter-ego/static/js/509.ed6733f8.chunk.js",
+    "static/js/651.059cfde8.chunk.js": "/Alter-ego/static/js/651.059cfde8.chunk.js",
+    "static/js/746.8ca040f4.chunk.js": "/Alter-ego/static/js/746.8ca040f4.chunk.js",
     "static/js/173.5c371312.chunk.js": "/Alter-ego/static/js/173.5c371312.chunk.js",
-    "static/js/35.123ee737.chunk.js": "/Alter-ego/static/js/35.123ee737.chunk.js",
-    "static/js/629.65d93c02.chunk.js": "/Alter-ego/static/js/629.65d93c02.chunk.js",
-    "static/media/profile.png": "/Alter-ego/static/media/profile.41abf61e7ac00f36afb0.png",
+    "static/js/307.2960710e.chunk.js": "/Alter-ego/static/js/307.2960710e.chunk.js",
+    "static/js/14.6c626732.chunk.js": "/Alter-ego/static/js/14.6c626732.chunk.js",
+    "static/media/Profile.jpg": "/Alter-ego/static/media/Profile.7b243a1edccf9879c8c2.jpg",
     "static/media/Ukraine.jpg": "/Alter-ego/static/media/Ukraine.2f45688553d387acfaa1.jpg",
     "index.html": "/Alter-ego/index.html",
     "main.1ef3a49a.css.map": "/Alter-ego/static/css/main.1ef3a49a.css.map",
-    "main.82b0ae18.js.map": "/Alter-ego/static/js/main.82b0ae18.js.map",
-    "924.e3321560.chunk.js.map": "/Alter-ego/static/js/924.e3321560.chunk.js.map",
+    "main.9a5d71f6.js.map": "/Alter-ego/static/js/main.9a5d71f6.js.map",
+    "195.e19d6a70.chunk.js.map": "/Alter-ego/static/js/195.e19d6a70.chunk.js.map",
     "545.0356f83b.chunk.js.map": "/Alter-ego/static/js/545.0356f83b.chunk.js.map",
-    "406.9b4aa8fd.chunk.js.map": "/Alter-ego/static/js/406.9b4aa8fd.chunk.js.map",
-    "509.ed6733f8.chunk.js.map": "/Alter-ego/static/js/509.ed6733f8.chunk.js.map",
+    "651.059cfde8.chunk.js.map": "/Alter-ego/static/js/651.059cfde8.chunk.js.map",
+    "746.8ca040f4.chunk.js.map": "/Alter-ego/static/js/746.8ca040f4.chunk.js.map",
     "173.5c371312.chunk.js.map": "/Alter-ego/static/js/173.5c371312.chunk.js.map",
-    "35.123ee737.chunk.js.map": "/Alter-ego/static/js/35.123ee737.chunk.js.map",
-    "629.65d93c02.chunk.js.map": "/Alter-ego/static/js/629.65d93c02.chunk.js.map"
+    "307.2960710e.chunk.js.map": "/Alter-ego/static/js/307.2960710e.chunk.js.map",
+    "14.6c626732.chunk.js.map": "/Alter-ego/static/js/14.6c626732.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1ef3a49a.css",
-    "static/js/main.82b0ae18.js"
+    "static/js/main.9a5d71f6.js"
   ]
 }
