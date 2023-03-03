@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import MyRoutes from "./routes/MyRoutes";
+import MyRoutes from "./myRoutes/MyRoutes";
 import { ThemeProvider } from "@mui/material/styles";
 import { store } from "./redux/store";
 import { theme } from "./appStyles";

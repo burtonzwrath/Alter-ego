@@ -6,7 +6,7 @@ import { getNews } from "../../redux/news/selectors/selectors";
 import profile from "../../assets/image/profilePage/profile.png";
 import Box from "@mui/material/Stack";
 import { Typography } from "@mui/material";
-import { profilePageStyles } from "./profilePageStyles";
+import { profilePageStyles } from "../profilePageStyles";
 import { setFlag } from "../../redux/news/newsSlice";
 import { useDispatch, useSelector } from "react-redux";
 
