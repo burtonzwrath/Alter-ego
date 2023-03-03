@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/burtonzwrath/Alter-ego.git/static/css/main.1ef3a49a.css",
+    "main.js": "/burtonzwrath/Alter-ego.git/static/js/main.24c51b2d.js",
+    "static/js/924.e3321560.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/924.e3321560.chunk.js",
+    "static/js/545.0356f83b.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/545.0356f83b.chunk.js",
+    "static/js/406.9b4aa8fd.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/406.9b4aa8fd.chunk.js",
+    "static/js/509.ed6733f8.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/509.ed6733f8.chunk.js",
+    "static/js/173.5c371312.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/173.5c371312.chunk.js",
+    "static/js/35.123ee737.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/35.123ee737.chunk.js",
+    "static/js/629.65d93c02.chunk.js": "/burtonzwrath/Alter-ego.git/static/js/629.65d93c02.chunk.js",
+    "static/media/profile.png": "/burtonzwrath/Alter-ego.git/static/media/profile.41abf61e7ac00f36afb0.png",
+    "static/media/Ukraine.jpg": "/burtonzwrath/Alter-ego.git/static/media/Ukraine.2f45688553d387acfaa1.jpg",
+    "index.html": "/burtonzwrath/Alter-ego.git/index.html",
+    "main.1ef3a49a.css.map": "/burtonzwrath/Alter-ego.git/static/css/main.1ef3a49a.css.map",
+    "main.24c51b2d.js.map": "/burtonzwrath/Alter-ego.git/static/js/main.24c51b2d.js.map",
+    "924.e3321560.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/924.e3321560.chunk.js.map",
+    "545.0356f83b.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/545.0356f83b.chunk.js.map",
+    "406.9b4aa8fd.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/406.9b4aa8fd.chunk.js.map",
+    "509.ed6733f8.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/509.ed6733f8.chunk.js.map",
+    "173.5c371312.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/173.5c371312.chunk.js.map",
+    "35.123ee737.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/35.123ee737.chunk.js.map",
+    "629.65d93c02.chunk.js.map": "/burtonzwrath/Alter-ego.git/static/js/629.65d93c02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ef3a49a.css",
+    "static/js/main.24c51b2d.js"
+  ]
+}
