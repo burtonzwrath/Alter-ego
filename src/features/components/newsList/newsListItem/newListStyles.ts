@@ -6,6 +6,7 @@ export const newListItemStyles = makeStyles({
         justifyContent: "space-between",
         gap: "10px",
         alignItems: "center",
+        padding:"10px"
     },
 
     itemContainer: {

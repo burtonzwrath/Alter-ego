@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import { getLocalStorageItem } from "../../helpers/locatStorage";
 import { useTranslation } from "react-i18next";
 import { getNews } from "../../redux/news/selectors/selectors";
-import profile from "../../assets/image/profilePage/profile.png";
+import profile from "../../assets/image/profilePage/Profile.jpg";
 import Box from "@mui/material/Stack";
 import { Typography } from "@mui/material";
 import { profilePageStyles } from "./profilePageStyles";

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4233a95-7e53-4db3-83e8-0476923a4e9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/ui/buttons/buttonsStyle.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/image/profilePage/Profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/authorization/authorizationStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/NavBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/components/navBar/navBarStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/navBar/navBarStyles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonHome.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonHome.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonNews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/ButtonProfile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/ButtonProfile.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/image/profilePage/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/NewsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/NewsListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListItem/newListStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/components/newsList/newsListStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/components/newsList/newsListStyles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/ui/buttons/buttonsStyle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/ui/buttons/buttonsStyle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profilePages/ProfilePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profilePages/ProfilePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profilePages/profilePageStyles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profilePages/profilePageStyles.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,7 @@
       <workItem from="1677670051099" duration="28248000" />
       <workItem from="1677770937294" duration="8201000" />
       <workItem from="1677782698000" duration="1618000" />
-      <workItem from="1677851560953" duration="5379000" />
+      <workItem from="1677851560953" duration="7339000" />
     </task>
     <task id="LOCAL-00001" summary="typescript add">
       <created>1677522836322</created>
@@ -249,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677790723445</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="navbar NavLinks active">
+      <created>1677857094297</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1677857094297</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +285,7 @@
     <MESSAGE value="auth form color" />
     <MESSAGE value="final" />
     <MESSAGE value="delete news fixed bag" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete news fixed bag" />
+    <MESSAGE value="navbar NavLinks active" />
+    <option name="LAST_COMMIT_MESSAGE" value="navbar NavLinks active" />
   </component>
 </project>

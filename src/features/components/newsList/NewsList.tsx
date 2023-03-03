@@ -15,10 +15,12 @@ import { useSelector } from "react-redux";
 
   return (
     <Box className={s.list}>
-      <Typography variant="h3"> {t("newsList")}</Typography>
+      <Typography   sx={{fontFamily: 'Railway',}} variant="h3"> {t("newsList")}</Typography>
+
       {news.flat().map((item) => (
         <NewsListItem key={item.id} item={item} />
       ))}
+
       {isLoading ? <Typography>Loading...</Typography> : ""}
       {news.length !== 0 ? <ButtonDownload /> : ""}
     </Box>

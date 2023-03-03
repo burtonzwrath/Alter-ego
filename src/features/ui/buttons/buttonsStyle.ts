@@ -6,7 +6,6 @@ export const isActiveStyle = {
     display:"flex",
     justifyContent:"flex-end",
     alignItems:"center"
-
 };
 export const notActive = {
     textDecoration: "none",
