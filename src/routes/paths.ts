@@ -1,7 +1,7 @@
 const paths = {
   LAYOUT: "/",
-  HOME: "/home",
-  NEWS: "*",
+  HOME: "*",
+  NEWS: "/news",
   PROFILE: "/profile",
 };
 export default paths;
