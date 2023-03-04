@@ -29,14 +29,16 @@ const AuthForm: React.FC<AuthFormTypes> = ({
   return (
     <Grid>
       <Box className={s.paper}>
-        <LogoutIcon className={s.logOutIcon} onClick={handleCloseForm} />
+        <Grid container justifyContent="flex-end">
+          <LogoutIcon className={s.logOutIcon} onClick={handleCloseForm} />
+        </Grid>
         <Grid className={s.authTitle}>
           <Typography variant="h6">Authorization</Typography>
         </Grid>
         <TextField
           size="small"
           value={userName}
-          onChange={(e) => setUserName(e.target.value)}
+          onChange={(e) => setUserName(e.target.value.toLowerCase())}
           label="Username"
           placeholder="Enter username"
           fullWidth

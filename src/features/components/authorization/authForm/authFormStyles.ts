@@ -13,6 +13,7 @@ export const authFormStyles = makeStyles({
     boxShadow: "3px 3px 3px 3px black",
     color: "black",
     backgroundColor: "lightgray",
+
   },
   signInButton: {
     margin: "8px 0",
@@ -20,7 +21,8 @@ export const authFormStyles = makeStyles({
     color: "mediumslateblue",
   },
   logOutIcon: {
-    position: "absolute",
+    // position: "absolute",
+    justifySelf:"flex-end",
     right: "5px",
     borderRadius: "50%",
     "&:hover": {

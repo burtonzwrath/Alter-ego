@@ -18,7 +18,10 @@ export const authorizationStyles = makeStyles({
         position: "absolute",
         top: "60px",
         right: "1px",
-        zIndex:"100"
+        zIndex:"100",
+        left:"20px",
+        "@media (min-width: 960px)": {
+        },
     },
     buttonWrapper: {
         display: "flex",
